@@ -1,0 +1,355 @@
+slug,question,fav_price,fav_won,pnl,volume,closed_time
+nor-kbk-bog-2026-04-06-total-1pt5,Kristiansund BK vs. FK Bodø/Glimt: O/U 1.5,0.88,True,0.12636363636363646,5449.98339,2026-04-06 19:14:45+00:00
+highest-temperature-in-buenos-aires-on-april-5-2026-22c,Will the highest temperature in Buenos Aires be 22°C on April 5?,0.88,True,0.12636363636363646,7055.437580999999,2026-04-06 06:06:51+00:00
+highest-temperature-in-munich-on-april-7-2026-19c,Will the highest temperature in Munich be 19°C on April 7?,0.88,True,0.12636363636363646,9099.370098000005,2026-04-08 01:29:57+00:00
+highest-temperature-in-chongqing-on-april-7-2026-18c,Will the highest temperature in Chongqing be 18°C on April 7?,0.88,True,0.12636363636363646,5986.213503999999,2026-04-06 21:06:01+00:00
+highest-temperature-in-wuhan-on-april-13-2026-24c,Will the highest temperature in Wuhan be 24°C on April 13?,0.88,True,0.12636363636363646,8580.445114999999,2026-04-13 19:32:45+00:00
+highest-temperature-in-chicago-on-april-7-2026-34-35f,Will the highest temperature in Chicago be between 34-35°F on April 7?,0.88,True,0.12636363636363646,9828.347224,2026-04-07 20:00:17+00:00
+highest-temperature-in-shenzhen-on-april-7-2026-31c,Will the highest temperature in Shenzhen be 31°C on April 7?,0.88,True,0.12636363636363646,8323.702155,2026-04-07 20:19:33+00:00
+highest-temperature-in-tel-aviv-on-april-7-2026-21c,Will the highest temperature in Tel Aviv be 21°C on April 7?,0.88,True,0.12636363636363646,7287.307072999998,2026-04-08 00:45:45+00:00
+highest-temperature-in-ankara-on-april-9-2026-11c,Will the highest temperature in Ankara be 11°C on April 9?,0.88,True,0.12636363636363646,9186.775116000012,2026-04-10 01:00:31+00:00
+highest-temperature-in-shenzhen-on-april-11-2026-30c,Will the highest temperature in Shenzhen be 30°C on April 11?,0.88,True,0.12636363636363646,7742.327514000001,2026-04-11 20:23:47+00:00
+highest-temperature-in-sao-paulo-on-april-11-2026-22c,Will the highest temperature in Sao Paulo be 22°C on April 11?,0.88,True,0.12636363636363646,6680.363465,2026-04-11 16:25:29+00:00
+highest-temperature-in-chongqing-on-april-12-2026-26c,Will the highest temperature in Chongqing be 26°C on April 12?,0.88,True,0.12636363636363646,6783.458163999995,2026-04-12 19:08:55+00:00
+highest-temperature-in-los-angeles-on-april-10-2026-72-73f,Will the highest temperature in Los Angeles be between 72-73°F on April 10?,0.88,True,0.12636363636363646,7599.45383,2026-04-11 10:29:49+00:00
+elc-por-ips-2026-01-04-total-4pt5,Portsmouth FC vs. Ipswich Town FC: O/U 4.5,0.882,True,0.12378684807256236,6426.648184000002,2026-04-15 09:44:32+00:00
+sud-car1-idp-2026-04-15-idp,Will Club Independiente Petrolero win on 2026-04-15?,0.885,True,0.11994350282485879,9484.702401000004,2026-04-16 05:51:28+00:00
+es2-spo-rso-2026-04-06-spread-away-1pt5,Spread: Real Sociedad de Fútbol B (-1.5),0.885,True,0.11994350282485879,5173.69765,2026-04-06 23:26:17+00:00
+highest-temperature-in-helsinki-on-april-6-2026-7c,Will the highest temperature in Helsinki be 7°C on April 6?,0.885,True,0.11994350282485879,5822.044585000001,2026-04-07 00:10:33+00:00
+ucl-spo1-ars-2026-04-07-spread-away-2pt5,Spread: Arsenal FC (-2.5),0.885,True,0.11994350282485879,7496.857154999999,2026-04-08 00:18:19+00:00
+highest-temperature-in-warsaw-on-april-13-2026-12c,Will the highest temperature in Warsaw be 12°C on April 13?,0.885,True,0.11994350282485879,8874.089422000006,2026-04-13 14:46:55+00:00
+highest-temperature-in-houston-on-april-10-2026-74forhigher,Will the highest temperature in Houston be 74°F or higher on April 10?,0.885,True,0.11994350282485879,6179.270820000002,2026-04-10 17:49:17+00:00
+highest-temperature-in-seattle-on-april-8-2026-54-55f,Will the highest temperature in Seattle be between 54-55°F on April 8?,0.885,True,0.11994350282485879,6873.078194,2026-04-08 23:58:25+00:00
+highest-temperature-in-helsinki-on-april-12-2026-12c,Will the highest temperature in Helsinki be 12°C on April 12?,0.885,True,0.11994350282485879,5131.930366000002,2026-04-13 00:05:15+00:00
+highest-temperature-in-san-francisco-on-april-7-2026-68-69f,Will the highest temperature in San Francisco be between 68-69°F on April 7?,0.885,True,0.11994350282485879,7237.762503000005,2026-04-08 10:07:45+00:00
+bun-ein-koe-2026-04-05-spread-away-1pt5,Spread: 1. FC Köln (-1.5),0.885,True,0.11994350282485879,6106.2451120000005,2026-04-05 20:20:05+00:00
+highest-temperature-in-chengdu-on-april-13-2026-25c,Will the highest temperature in Chengdu be 25°C on April 13?,0.885,True,0.11994350282485879,6718.894705999996,2026-04-13 19:29:19+00:00
+highest-temperature-in-chengdu-on-april-6-2026-23c,Will the highest temperature in Chengdu be 23°C on April 6?,0.885,True,0.11994350282485879,5279.477787999996,2026-04-06 18:20:23+00:00
+will-the-price-of-xrp-be-between-1pt40-1pt50-on-april-15,Will the price of XRP be between $1.40 and $1.50 on April 15?,0.885,True,0.11994350282485879,5092.299743,2026-04-15 18:34:40+00:00
+tur-ant-kon-2026-04-17-total-4pt5,Antalyaspor vs. Konyaspor: O/U 4.5,0.885,True,0.11994350282485879,6883.995543,2026-04-17 22:37:54+00:00
+highest-temperature-in-miami-on-april-15-2026-84-85f,Will the highest temperature in Miami be between 84-85°F on April 15?,0.885,True,0.11994350282485879,8593.103760999995,2026-04-16 07:30:44+00:00
+lol-flk-koia-2026-04-16-total-games-2pt5,Games Total: O/U 2.5,0.885,True,0.11994350282485879,6768.380102,2026-04-16 23:17:08+00:00
+highest-temperature-in-helsinki-on-april-11-2026-6c,Will the highest temperature in Helsinki be 6°C on April 11?,0.885,True,0.11994350282485879,5828.676029000001,2026-04-11 10:45:29+00:00
+highest-temperature-in-istanbul-on-april-5-2026-15c,Will the highest temperature in Istanbul be 15°C on April 5?,0.885,True,0.11994350282485879,5774.501373,2026-04-05 23:33:05+00:00
+highest-temperature-in-seattle-on-april-7-2026-58-59f,Will the highest temperature in Seattle be between 58-59°F on April 7?,0.889,True,0.11485939257592805,7803.748436999996,2026-04-08 10:02:49+00:00
+highest-temperature-in-shenzhen-on-april-8-2026-30c,Will the highest temperature in Shenzhen be 30°C on April 8?,0.89,True,0.11359550561797761,8242.370992000004,2026-04-08 19:19:47+00:00
+highest-temperature-in-madrid-on-april-12-2026-18c,Will the highest temperature in Madrid be 18°C on April 12?,0.89,True,0.11359550561797761,9203.857517000002,2026-04-13 00:51:59+00:00
+highest-temperature-in-buenos-aires-on-april-6-2026-22c,Will the highest temperature in Buenos Aires be 22°C on April 6?,0.89,True,0.11359550561797761,5485.823047000003,2026-04-07 05:46:01+00:00
+will-hotschedules-be-1-paid-app-in-the-us-apple-app-store-on-april-7,Will HotSchedules be #1 Paid App in the US Apple App Store on April 7?,0.89,True,0.11359550561797761,5097.37597,2026-04-07 19:39:59+00:00
+highest-temperature-in-busan-on-april-7-2026-18c,Will the highest temperature in Busan be 18°C on April 7?,0.89,True,0.11359550561797761,5571.152381000003,2026-04-07 18:15:27+00:00
+den-fcf-vbk-2026-04-13-spread-away-2pt5,Spread: Vejle BK (-2.5),0.89,True,0.11359550561797761,6429.625574999996,2026-04-13 22:38:01+00:00
+highest-temperature-in-lucknow-on-april-13-2026-38c,Will the highest temperature in Lucknow be 38°C on April 13?,0.89,True,0.11359550561797761,7941.709837,2026-04-13 22:23:39+00:00
+highest-temperature-in-sao-paulo-on-april-5-2026-29c,Will the highest temperature in Sao Paulo be 29°C on April 5?,0.89,True,0.11359550561797761,8939.776796999995,2026-04-06 06:08:13+00:00
+highest-temperature-in-amsterdam-on-april-6-2026-16corhigher,Will the highest temperature in Amsterdam be 16°C or higher on April 6?,0.89,True,0.11359550561797761,8828.661584000014,2026-04-07 00:59:11+00:00
+highest-temperature-in-chengdu-on-april-6-2026-24c,Will the highest temperature in Chengdu be 24°C on April 6?,0.89,True,0.11359550561797761,5658.244551999995,2026-04-06 18:20:27+00:00
+highest-temperature-in-shanghai-on-april-7-2026-14c,Will the highest temperature in Shanghai be 14°C on April 7?,0.89,True,0.11359550561797761,9017.421604999998,2026-04-07 03:35:01+00:00
+highest-temperature-in-munich-on-april-6-2026-12c,Will the highest temperature in Munich be 12°C on April 6?,0.89,True,0.11359550561797761,6393.802334000001,2026-04-06 00:38:09+00:00
+highest-temperature-in-amsterdam-on-april-11-2026-14c,Will the highest temperature in Amsterdam be 14°C on April 11?,0.89,True,0.11359550561797761,5679.687248000001,2026-04-11 14:17:43+00:00
+bun-stu-hsv-2026-04-12-total-1pt5,VfB Stuttgart vs. Hamburger SV: O/U 1.5,0.89,True,0.11359550561797761,5095.722485000001,2026-04-12 19:09:21+00:00
+col-az-shd-2026-04-16-spread-away-1pt5,Spread: FK Shakhtar Donetsk (-1.5),0.89,True,0.11359550561797761,8081.782161,2026-04-16 22:03:20+00:00
+highest-temperature-in-moscow-on-april-5-2026-10c,Will the highest temperature in Moscow be 10°C on April 5?,0.89,True,0.11359550561797761,5411.0501349999995,2026-04-05 23:19:55+00:00
+uel-bol-ast4-2026-04-09-total-4pt5,Bologna FC 1909 vs. Aston Villa FC: O/U 4.5,0.89,True,0.11359550561797761,7195.542651000001,2026-04-10 00:19:55+00:00
+highest-temperature-in-kuala-lumpur-on-april-10-2026-36corhigher,Will the highest temperature in Kuala Lumpur be 36°C or higher on April 10?,0.895,True,0.10731843575418988,5432.888593,2026-04-10 19:27:33+00:00
+lol-flk-koia-2026-04-16-game-handicap-home-1pt5,Game Handicap: MKF (-1.5) vs FALKE Esports (+1.5),0.895,True,0.10731843575418988,8236.359703999997,2026-04-16 23:17:12+00:00
+highest-temperature-in-chongqing-on-april-10-2026-22corbelow,Will the highest temperature in Chongqing be 22°C or below on April 10?,0.895,True,0.10731843575418988,9162.502468999995,2026-04-10 03:52:29+00:00
+will-the-detroit-red-wings-make-the-nhl-playoffs,Will the Detroit Red Wings make the NHL Playoffs?,0.895,True,0.10731843575418988,5758.603832,2026-04-12 03:03:45+00:00
+highest-temperature-in-amsterdam-on-april-12-2026-16c,Will the highest temperature in Amsterdam be 16°C on April 12?,0.895,True,0.10731843575418988,6130.045698999998,2026-04-13 01:04:53+00:00
+highest-temperature-in-wellington-on-april-10-2026-20c,Will the highest temperature in Wellington be 20°C on April 10?,0.895,True,0.10731843575418988,9994.833749000012,2026-04-10 14:32:15+00:00
+highest-temperature-in-buenos-aires-on-april-12-2026-22c,Will the highest temperature in Buenos Aires be 22°C on April 12?,0.895,True,0.10731843575418988,5232.335940999999,2026-04-12 17:56:27+00:00
+highest-temperature-in-chengdu-on-april-9-2026-27c,Will the highest temperature in Chengdu be 27°C on April 9?,0.895,True,0.10731843575418988,8702.273246000002,2026-04-09 08:54:53+00:00
+highest-temperature-in-lucknow-on-april-9-2026-33c,Will the highest temperature in Lucknow be 33°C on April 9?,0.895,True,0.10731843575418988,6633.2616659999985,2026-04-09 20:42:37+00:00
+highest-temperature-in-shenzhen-on-april-10-2026-26c,Will the highest temperature in Shenzhen be 26°C on April 10?,0.895,True,0.10731843575418988,5775.126695000004,2026-04-10 04:00:25+00:00
+highest-temperature-in-austin-on-april-5-2026-72-73f,Will the highest temperature in Austin be between 72-73°F on April 5?,0.895,True,0.10731843575418988,5668.868191000002,2026-04-06 08:43:03+00:00
+highest-temperature-in-miami-on-april-6-2026-86-87f,Will the highest temperature in Miami be between 86-87°F on April 6?,0.895,True,0.10731843575418988,9542.532503000002,2026-04-07 07:07:11+00:00
+highest-temperature-in-busan-on-april-7-2026-17c,Will the highest temperature in Busan be 17°C on April 7?,0.895,True,0.10731843575418988,5297.790057,2026-04-07 18:16:27+00:00
+highest-temperature-in-moscow-on-april-8-2026-3c,Will the highest temperature in Moscow be 3°C on April 8?,0.895,True,0.10731843575418988,5150.502658,2026-04-08 00:38:45+00:00
+highest-temperature-in-moscow-on-april-5-2026-11c,Will the highest temperature in Moscow be 11°C on April 5?,0.895,True,0.10731843575418988,7084.992692000003,2026-04-06 01:20:03+00:00
+highest-temperature-in-tel-aviv-on-april-5-2026-23c,Will the highest temperature in Tel Aviv be 23°C on April 5?,0.895,True,0.10731843575418988,5269.487712000001,2026-04-05 23:32:51+00:00
+highest-temperature-in-wellington-on-april-6-2026-18c,Will the highest temperature in Wellington be 18°C on April 6?,0.895,True,0.10731843575418988,8271.620973999998,2026-04-06 02:14:33+00:00
+highest-temperature-in-tel-aviv-on-april-12-2026-19c,Will the highest temperature in Tel Aviv be 19°C on April 12?,0.895,True,0.10731843575418988,6028.482572,2026-04-12 10:38:55+00:00
+will-the-price-of-ethereum-be-between-2100-2200-on-april-17,"Will the price of Ethereum be between $2,100 and $2,200 on April 17?",0.895,True,0.10731843575418988,7808.274272999999,2026-04-17 19:12:44+00:00
+highest-temperature-in-san-francisco-on-april-15-2026-66forhigher,Will the highest temperature in San Francisco be 66°F or higher on April 15?,0.895,True,0.10731843575418988,6946.895793000005,2026-04-16 10:48:18+00:00
+highest-temperature-in-atlanta-on-april-14-2026-90-91f,Will the highest temperature in Atlanta be between 90-91°F on April 14?,0.8985,True,0.10296605453533682,6989.768221999996,2026-04-15 07:04:00+00:00
+aapl-close-above-265-on-april-6-2026,Will Apple (AAPL) close above $265 on April 6?,0.8995,True,0.10172873818788221,7756.903525000001,2026-04-06 22:02:17+00:00
+highest-temperature-in-chengdu-on-april-12-2026-19c,Will the highest temperature in Chengdu be 19°C on April 12?,0.9,True,0.10111111111111117,5399.120901999999,2026-04-11 20:09:41+00:00
+highest-temperature-in-lucknow-on-april-10-2026-34c,Will the highest temperature in Lucknow be 34°C on April 10?,0.9,True,0.10111111111111117,9425.595179999998,2026-04-10 22:34:55+00:00
+highest-temperature-in-istanbul-on-april-12-2026-16corhigher,Will the highest temperature in Istanbul be 16°C or higher on April 12?,0.9,True,0.10111111111111117,5418.3648429999985,2026-04-13 00:21:13+00:00
+highest-temperature-in-busan-on-april-12-2026-22c,Will the highest temperature in Busan be 22°C on April 12?,0.9,True,0.10111111111111117,8520.969672000001,2026-04-12 17:53:23+00:00
+ucl-liv1-psg1-2026-04-14-exact-score-2-1,Exact Score: Liverpool FC 2 - 1 Paris Saint-Germain FC?,0.9,True,0.10111111111111117,9683.875818000002,2026-04-15 00:27:16+00:00
+highest-temperature-in-chongqing-on-april-8-2026-22c,Will the highest temperature in Chongqing be 22°C on April 8?,0.9,True,0.10111111111111117,5658.921574000002,2026-04-08 06:33:17+00:00
+highest-temperature-in-seattle-on-april-14-2026-54-55f,Will the highest temperature in Seattle be between 54-55°F on April 14?,0.9,True,0.10111111111111117,8051.6275019999985,2026-04-15 09:46:38+00:00
+highest-temperature-in-chicago-on-april-6-2026-54-55f,Will the highest temperature in Chicago be between 54-55°F on April 6?,0.9,True,0.10111111111111117,6702.067196999999,2026-04-07 08:34:15+00:00
+highest-temperature-in-moscow-on-april-8-2026-11corhigher,Will the highest temperature in Moscow be 11°C or higher on April 8?,0.9,True,0.10111111111111117,5002.382677999996,2026-04-09 00:10:19+00:00
+highest-temperature-in-buenos-aires-on-april-6-2026-17c,Will the highest temperature in Buenos Aires be 17°C on April 6?,0.9045,True,0.09558319513543402,7479.420741,2026-04-06 18:42:27+00:00
+highest-temperature-in-buenos-aires-on-april-5-2026-18c,Will the highest temperature in Buenos Aires be 18°C on April 5?,0.905,True,0.0949723756906078,9136.413418000004,2026-04-05 23:24:49+00:00
+highest-temperature-in-beijing-on-april-11-2026-30c,Will the highest temperature in Beijing be 30°C on April 11?,0.905,True,0.0949723756906078,6334.082950000004,2026-04-11 20:05:09+00:00
+highest-temperature-in-atlanta-on-april-6-2026-74-75f,Will the highest temperature in Atlanta be between 74-75°F on April 6?,0.905,True,0.0949723756906078,9301.803352,2026-04-07 07:18:05+00:00
+highest-temperature-in-san-francisco-on-april-6-2026-60-61f,Will the highest temperature in San Francisco be between 60-61°F on April 6?,0.905,True,0.0949723756906078,7491.709964000002,2026-04-06 23:11:25+00:00
+highest-temperature-in-seattle-on-april-13-2026-58-59f,Will the highest temperature in Seattle be between 58-59°F on April 13?,0.905,True,0.0949723756906078,9390.707144000005,2026-04-14 10:35:55+00:00
+col-ray-aek1-2026-04-09-spread-away-1pt5,Spread: AEK (-1.5),0.905,True,0.0949723756906078,9052.769967999999,2026-04-09 20:53:05+00:00
+highest-temperature-in-helsinki-on-april-8-2026-6c,Will the highest temperature in Helsinki be 6°C on April 8?,0.905,True,0.0949723756906078,6143.714276000002,2026-04-08 14:29:23+00:00
+ucl-psg1-liv1-2026-04-08-exact-score-2-1,Exact Score: Paris Saint-Germain FC 2 - 1 Liverpool FC?,0.905,True,0.0949723756906078,5639.482074000002,2026-04-08 23:50:33+00:00
+highest-temperature-in-chengdu-on-april-10-2026-22c,Will the highest temperature in Chengdu be 22°C on April 10?,0.905,True,0.0949723756906078,7887.880373,2026-04-09 19:57:55+00:00
+uel-por1-not-2026-04-09-spread-away-1pt5,Spread: Nottingham Forest FC (-1.5),0.905,True,0.0949723756906078,7586.957692,2026-04-10 00:31:09+00:00
+highest-temperature-in-warsaw-on-april-11-2026-9c,Will the highest temperature in Warsaw be 9°C on April 11?,0.905,True,0.0949723756906078,6302.836334000003,2026-04-11 14:28:33+00:00
+highest-temperature-in-wuhan-on-april-11-2026-25c,Will the highest temperature in Wuhan be 25°C on April 11?,0.905,True,0.0949723756906078,7325.882052000002,2026-04-11 20:07:45+00:00
+j1100-avi-vva-2026-04-11-total-4pt5,Avispa Fukuoka vs. V-Varen Nagasaki: O/U 4.5,0.905,True,0.0949723756906078,7177.618920000001,2026-04-11 09:28:49+00:00
+will-trump-say-gay-this-week-april-5,"Will Trump say ""Gay"" this week? (April 5)",0.905,True,0.0949723756906078,7503.040581000001,2026-04-06 06:07:05+00:00
+spl-nsr-ett-2026-04-24-draw,Will Al Nassr Saudi Club vs. Al Ettifaq Saudi Club end in a draw?,0.905,True,0.0949723756906078,6692.621641000002,2026-04-16 06:29:16+00:00
+highest-temperature-in-shenzhen-on-april-6-2026-30c,Will the highest temperature in Shenzhen be 30°C on April 6?,0.905,True,0.0949723756906078,9253.236182000004,2026-04-06 18:39:25+00:00
+highest-temperature-in-taipei-on-april-6-2026-29c,Will the highest temperature in Taipei be 29°C on April 6?,0.905,True,0.0949723756906078,5958.204712000002,2026-04-06 18:35:15+00:00
+elc-mil-nor-2026-04-06-spread-away-2pt5,Spread: Norwich City FC (-2.5),0.905,True,0.0949723756906078,7045.762700000003,2026-04-06 16:18:11+00:00
+solana-above-90-on-april-13,Will the price of Solana be above $90 on April 13?,0.907,True,0.09253583241455333,8596.075245,2026-04-13 19:20:23+00:00
+highest-temperature-in-kuala-lumpur-on-april-6-2026-28corbelow,Will the highest temperature in Kuala Lumpur be 28°C or below on April 6?,0.909,True,0.09011001100110018,9384.902494999998,2026-04-06 08:51:07+00:00
+highest-temperature-in-shenzhen-on-april-6-2026-31corhigher,Will the highest temperature in Shenzhen be 31°C or higher on April 6?,0.91,True,0.08890109890109878,8437.230592999987,2026-04-06 18:38:19+00:00
+highest-temperature-in-moscow-on-april-6-2026-5corbelow,Will the highest temperature in Moscow be 5°C or below on April 6?,0.91,True,0.08890109890109878,9959.987634000001,2026-04-06 09:12:41+00:00
+gs-quarterly-earnings-gaap-eps-04-13-2026-15pt95,Will Goldman Sachs (GS) beat quarterly earnings?,0.91,True,0.08890109890109878,8156.548149999999,2026-04-13 15:57:27+00:00
+highest-temperature-in-jakarta-on-april-6-2026-35c,Will the highest temperature in Jakarta be 35°C on April 6?,0.91,True,0.08890109890109878,6191.367901000001,2026-04-06 19:36:13+00:00
+highest-temperature-in-buenos-aires-on-april-14-2026-29corhigher,Will the highest temperature in Buenos Aires be 29°C or higher on April 14?,0.91,True,0.08890109890109878,6711.173658000001,2026-04-15 05:57:06+00:00
+highest-temperature-in-kuala-lumpur-on-april-6-2026-36c,Will the highest temperature in Kuala Lumpur be 36°C on April 6?,0.91,True,0.08890109890109878,7816.762551999999,2026-04-06 18:25:51+00:00
+ucl-fcb1-atm1-2026-04-08-exact-score-3-1,Exact Score: FC Barcelona 3 - 1 Club Atlético de Madrid?,0.91,True,0.08890109890109878,7100.277793999998,2026-04-08 23:57:23+00:00
+highest-temperature-in-toronto-on-april-8-2026-3c,Will the highest temperature in Toronto be 3°C on April 8?,0.91,True,0.08890109890109878,6152.367811999999,2026-04-08 22:07:35+00:00
+por-ton-gil-2026-04-13-spread-home-1pt5,Spread: CD Tondela (-1.5),0.91,True,0.08890109890109878,7033.530666999999,2026-04-13 23:23:27+00:00
+highest-temperature-in-wuhan-on-april-7-2026-21corbelow,Will the highest temperature in Wuhan be 21°C or below on April 7?,0.91,True,0.08890109890109878,9138.434886000005,2026-04-07 08:18:39+00:00
+cz-binance-of-tweets-march-31-april-7-2026-20-39,"Will CZ post 20-39 posts from March 31 to April 7, 2026?",0.91,True,0.08890109890109878,6709.104544999996,2026-04-07 19:35:57+00:00
+highest-temperature-in-wuhan-on-april-12-2026-20c,Will the highest temperature in Wuhan be 20°C on April 12?,0.91,True,0.08890109890109878,5167.125603999999,2026-04-12 06:35:57+00:00
+highest-temperature-in-wuhan-on-april-12-2026-26corhigher,Will the highest temperature in Wuhan be 26°C or higher on April 12?,0.91,True,0.08890109890109878,5006.693848999998,2026-04-12 19:07:55+00:00
+highest-temperature-in-wuhan-on-april-9-2026-25c,Will the highest temperature in Wuhan be 25°C on April 9?,0.91,True,0.08890109890109878,7949.861623999997,2026-04-09 19:58:53+00:00
+highest-temperature-in-mexico-city-on-april-11-2026-22c,Will the highest temperature in Mexico City be 22°C on April 11?,0.91,True,0.08890109890109878,8687.781765999995,2026-04-11 19:45:27+00:00
+highest-temperature-in-warsaw-on-april-11-2026-14c,Will the highest temperature in Warsaw be 14°C on April 11?,0.91,True,0.08890109890109878,6626.623809000003,2026-04-12 00:27:35+00:00
+highest-temperature-in-sao-paulo-on-april-9-2026-24c,Will the highest temperature in Sao Paulo be 24°C on April 9?,0.91,True,0.08890109890109878,9555.171554999999,2026-04-09 15:54:03+00:00
+highest-temperature-in-toronto-on-april-11-2026-13c,Will the highest temperature in Toronto be 13°C on April 11?,0.91,True,0.08890109890109878,9587.289479000003,2026-04-12 07:21:53+00:00
+2026-valero-texas-open-winner-tommy-fleetwood-win,Will Tommy Fleetwood win the 2026 Valero Texas Open?,0.911,True,0.08769484083424796,5035.408566999999,2026-04-05 23:45:33+00:00
+will-trump-name-netanyahu-in-april,"Will Trump name ""Netanyahu"" in April?",0.911,True,0.08769484083424796,5682.965559000001,2026-04-06 21:52:29+00:00
+highest-temperature-in-houston-on-april-7-2026-67forbelow,Will the highest temperature in Houston be 67°F or below on April 7?,0.9135,True,0.08469074986316373,6292.886033999997,2026-04-07 19:17:05+00:00
+highest-temperature-in-denver-on-april-6-2026-62-63f,Will the highest temperature in Denver be between 62-63°F on April 6?,0.915,True,0.08289617486338786,6369.996817000006,2026-04-07 01:04:31+00:00
+will-there-be-exactly-7-earthquakes-of-magnitude-5pt5-or-higher-worldwide-by-april-5,Will there be exactly 7 earthquakes of magnitude 5.5 or higher worldwide by April 5?,0.915,True,0.08289617486338786,7191.801812000003,2026-04-13 13:39:59+00:00
+highest-temperature-in-kuala-lumpur-on-april-13-2026-31c,Will the highest temperature in Kuala Lumpur be 31°C on April 13?,0.915,True,0.08289617486338786,6275.391336999999,2026-04-13 06:28:47+00:00
+highest-temperature-in-beijing-on-april-10-2026-21c,Will the highest temperature in Beijing be 21°C on April 10?,0.915,True,0.08289617486338786,7334.874213999999,2026-04-10 07:12:35+00:00
+highest-temperature-in-mexico-city-on-april-12-2026-23corhigher,Will the highest temperature in Mexico City be 23°C or higher on April 12?,0.915,True,0.08289617486338786,5483.802251000001,2026-04-12 20:44:29+00:00
+arg-aae-bar-2026-04-11-total-4pt5,AA Estudiantes vs. CA Barracas Central: O/U 4.5,0.915,True,0.08289617486338786,5089.590238000001,2026-04-12 04:40:33+00:00
+highest-temperature-in-chengdu-on-april-7-2026-19c,Will the highest temperature in Chengdu be 19°C on April 7?,0.915,True,0.08289617486338786,5421.501831000001,2026-04-07 07:25:47+00:00
+highest-temperature-in-denver-on-april-7-2026-63forbelow,Will the highest temperature in Denver be 63°F or below on April 7?,0.915,True,0.08289617486338786,7829.460333000004,2026-04-07 21:22:39+00:00
+highest-temperature-in-houston-on-april-8-2026-82-83f,Will the highest temperature in Houston be between 82-83°F on April 8?,0.915,True,0.08289617486338786,5670.622649999998,2026-04-09 07:26:25+00:00
+highest-temperature-in-moscow-on-april-6-2026-13c,Will the highest temperature in Moscow be 13°C on April 6?,0.915,True,0.08289617486338786,5815.827293000003,2026-04-06 23:58:39+00:00
+will-trump-say-save-act-or-save-america-act-during-the-white-house-easter-egg-roll,"Will Trump say ""SAVE Act"" or ""SAVE America Act"" during the White House Easter Egg Roll?",0.915,True,0.08289617486338786,9953.944202999997,2026-04-07 03:11:49+00:00
+highest-temperature-in-istanbul-on-april-6-2026-13c,Will the highest temperature in Istanbul be 13°C on April 6?,0.915,True,0.08289617486338786,5130.151858000001,2026-04-06 12:08:43+00:00
+tur-riz-gfk-2026-04-13-spread-away-1pt5,Spread: Gaziantep FK (-1.5),0.915,True,0.08289617486338786,8914.899273,2026-04-13 22:41:39+00:00
+highest-temperature-in-seoul-on-april-9-2026-9c,Will the highest temperature in Seoul be 9°C on April 9?,0.917,True,0.08051254089422023,9794.638693000003,2026-04-08 22:38:15+00:00
+highest-temperature-in-chengdu-on-april-13-2026-26c,Will the highest temperature in Chengdu be 26°C on April 13?,0.918,True,0.07932461873638343,9355.736999,2026-04-13 19:30:21+00:00
+highest-temperature-in-tel-aviv-on-april-8-2026-22c,Will the highest temperature in Tel Aviv be 22°C on April 8?,0.9195,True,0.07754758020663412,9383.190396999998,2026-04-09 00:24:53+00:00
+highest-temperature-in-wellington-on-april-12-2026-16c,Will the highest temperature in Wellington be 16°C on April 12?,0.92,True,0.07695652173913038,5863.256110000002,2026-04-11 15:32:03+00:00
+highest-temperature-in-wellington-on-april-9-2026-16c,Will the highest temperature in Wellington be 16°C on April 9?,0.92,True,0.07695652173913038,7318.977683000001,2026-04-08 15:51:49+00:00
+highest-temperature-in-lucknow-on-april-8-2026-31c,Will the highest temperature in Lucknow be 31°C on April 8?,0.92,True,0.07695652173913038,5507.44855,2026-04-08 21:37:27+00:00
+highest-temperature-in-wellington-on-april-8-2026-17c,Will the highest temperature in Wellington be 17°C on April 8?,0.92,True,0.07695652173913038,7210.352193000001,2026-04-08 01:40:01+00:00
+lib-alw-lqu-2026-04-07-spread-away-2pt5,Spread: LDU de Quito (-2.5),0.92,True,0.07695652173913038,6880.144278000002,2026-04-08 05:12:39+00:00
+highest-temperature-in-dallas-on-april-6-2026-66-67f,Will the highest temperature in Dallas be between 66-67°F on April 6?,0.92,True,0.07695652173913038,8782.828410000002,2026-04-06 20:44:53+00:00
+bra-flu-fla-2026-04-11-total-4pt5,Fluminense FC vs. CR Flamengo: O/U 4.5,0.92,True,0.07695652173913038,5879.698371999999,2026-04-13 17:08:13+00:00
+highest-temperature-in-taipei-on-april-8-2026-23c,Will the highest temperature in Taipei be 23°C on April 8?,0.92,True,0.07695652173913038,7854.173009000001,2026-04-08 07:38:19+00:00
+ucl-liv1-psg1-2026-04-14-exact-score-1-2,Exact Score: Liverpool FC 1 - 2 Paris Saint-Germain FC?,0.92,True,0.07695652173913038,8571.170032,2026-04-15 00:30:26+00:00
+mex-pue-leo-2026-04-10-spread-home-2pt5,Spread: Club Puebla (-2.5),0.92,True,0.07695652173913038,8002.299923999998,2026-04-11 05:31:09+00:00
+highest-temperature-in-kuala-lumpur-on-april-10-2026-35c,Will the highest temperature in Kuala Lumpur be 35°C on April 10?,0.92,True,0.07695652173913038,5851.183630999999,2026-04-10 19:28:33+00:00
+highest-temperature-in-hong-kong-on-april-6-2026-30corhigher,Will the highest temperature in Hong Kong be 30°C or higher on April 6?,0.92,True,0.07695652173913038,8497.285318999999,2026-04-08 09:04:27+00:00
+highest-temperature-in-dallas-on-april-7-2026-76-77f,Will the highest temperature in Dallas be between 76-77°F on April 7?,0.92,True,0.07695652173913038,6915.310642,2026-04-08 08:49:39+00:00
+highest-temperature-in-tel-aviv-on-april-10-2026-19c,Will the highest temperature in Tel Aviv be 19°C on April 10?,0.9205,True,0.07636610537751222,5118.270877000001,2026-04-10 09:47:33+00:00
+highest-temperature-in-chengdu-on-april-5-2026-30corhigher,Will the highest temperature in Chengdu be 30°C or higher on April 5?,0.9225,True,0.07401084010840121,8931.063153999998,2026-04-05 23:26:47+00:00
+highest-temperature-in-buenos-aires-on-april-9-2026-25corhigher,Will the highest temperature in Buenos Aires be 25°C or higher on April 9?,0.9245,True,0.07166576527852887,6594.582976999998,2026-04-10 05:49:43+00:00
+highest-temperature-in-austin-on-april-6-2026-66-67f,Will the highest temperature in Austin be between 66-67°F on April 6?,0.9245,True,0.07166576527852887,5074.323308000003,2026-04-06 19:16:35+00:00
+highest-temperature-in-buenos-aires-on-april-15-2026-26c,Will the highest temperature in Buenos Aires be 26°C on April 15?,0.925,True,0.07108108108108092,8764.827700999997,2026-04-16 05:35:44+00:00
+uel-not-por1-2026-04-16-spread-home-2pt5,Spread: Nottingham Forest FC (-2.5),0.925,True,0.07108108108108092,7801.3322920000055,2026-04-17 00:11:20+00:00
+highest-temperature-in-amsterdam-on-april-11-2026-20c,Will the highest temperature in Amsterdam be 20°C on April 11?,0.925,True,0.07108108108108092,6133.228968000002,2026-04-12 00:38:21+00:00
+highest-temperature-in-san-francisco-on-april-11-2026-66forhigher,Will the highest temperature in San Francisco be 66°F or higher on April 11?,0.925,True,0.07108108108108092,6075.504464999997,2026-04-12 10:44:59+00:00
+aapl-up-or-down-on-april-8-2026,Apple (AAPL) Up or Down on April 8?,0.925,True,0.07108108108108092,9110.361013,2026-04-11 13:15:07+00:00
+highest-temperature-in-milan-on-april-10-2026-25corhigher,Will the highest temperature in Milan be 25°C or higher on April 10?,0.925,True,0.07108108108108092,9989.244189999994,2026-04-11 00:55:35+00:00
+lal-elc-val-2026-04-11-spread-home-2pt5,Spread: Elche CF (-2.5),0.925,True,0.07108108108108092,6418.741824000001,2026-04-11 20:13:09+00:00
+highest-temperature-in-los-angeles-on-april-8-2026-64-65f,Will the highest temperature in Los Angeles be between 64-65°F on April 8?,0.925,True,0.07108108108108092,5054.521592,2026-04-08 20:19:25+00:00
+highest-temperature-in-singapore-on-april-12-2026-34c,Will the highest temperature in Singapore be 34°C on April 12?,0.925,True,0.07108108108108092,6919.638529000001,2026-04-12 18:55:45+00:00
+mex-pue-leo-2026-04-10-spread-away-2pt5,Spread: Club León FC (-2.5),0.925,True,0.07108108108108092,6254.329846999997,2026-04-11 05:32:07+00:00
+will-dualshot-recorder-be-1-paid-app-in-the-us-apple-app-store-on-april-7,Will DualShot Recorder be #1 Paid App in the US Apple App Store on April 7?,0.925,True,0.07108108108108092,9366.891870000005,2026-04-07 19:22:55+00:00
+ucl-atm1-fcb1-2026-04-14-exact-score-0-2,Exact Score: Club Atlético de Madrid 0 - 2 FC Barcelona?,0.925,True,0.07108108108108092,8426.308013,2026-04-15 00:35:32+00:00
+highest-temperature-in-toronto-on-april-6-2026-3c,Will the highest temperature in Toronto be 3°C on April 6?,0.925,True,0.07108108108108092,5979.405907999999,2026-04-06 18:44:33+00:00
+xrp-above-1pt4-on-april-6,Will the price of XRP be above $1.40 on April 6?,0.925,True,0.07108108108108092,9077.285264999999,2026-04-06 18:08:19+00:00
+will-trust-me-the-false-prophet-be-the-top-us-netflix-show-this-week,"Will ""Trust Me: The False Prophet"" be the top US Netflix show this week?",0.925,True,0.07108108108108092,8598.199419999995,2026-04-14 21:06:10+00:00
+highest-temperature-in-wuhan-on-april-13-2026-25c,Will the highest temperature in Wuhan be 25°C on April 13?,0.925,True,0.07108108108108092,9397.329387000003,2026-04-13 19:29:21+00:00
+highest-temperature-in-beijing-on-april-11-2026-29c,Will the highest temperature in Beijing be 29°C on April 11?,0.925,True,0.07108108108108092,8420.008431999999,2026-04-11 20:06:21+00:00
+highest-temperature-in-austin-on-april-7-2026-78-79f,Will the highest temperature in Austin be between 78-79°F on April 7?,0.928,True,0.0675862068965516,8032.008642000003,2026-04-08 08:48:43+00:00
+highest-temperature-in-san-francisco-on-april-5-2026-70-71f,Will the highest temperature in San Francisco be between 70-71°F on April 5?,0.929,True,0.06642626480086113,7677.374174000001,2026-04-06 00:11:35+00:00
+ucl-rma1-bay1-2026-04-07-exact-score-2-1,Exact Score: Real Madrid CF 2 - 1 FC Bayern München?,0.9299999999999999,True,0.06526881720430124,8676.984105999996,2026-04-08 00:17:23+00:00
+highest-temperature-in-paris-on-april-9-2026-20c,Will the highest temperature in Paris be 20°C on April 9?,0.9299999999999999,True,0.06526881720430124,6813.616955000001,2026-04-09 12:46:07+00:00
+ucl-rma1-bay1-2026-04-07-exact-score-2-2,Exact Score: Real Madrid CF 2 - 2 FC Bayern München?,0.9299999999999999,True,0.06526881720430124,6050.638241999998,2026-04-08 00:17:23+00:00
+highest-temperature-in-lucknow-on-april-6-2026-35c,Will the highest temperature in Lucknow be 35°C on April 6?,0.9299999999999999,True,0.06526881720430124,6140.436770000005,2026-04-07 01:09:59+00:00
+highest-temperature-in-milan-on-april-6-2026-21c,Will the highest temperature in Milan be 21°C on April 6?,0.9299999999999999,True,0.06526881720430124,6507.657087000004,2026-04-06 15:35:21+00:00
+highest-temperature-in-chongqing-on-april-11-2026-26c,Will the highest temperature in Chongqing be 26°C on April 11?,0.9299999999999999,True,0.06526881720430124,6898.891791000001,2026-04-11 20:10:43+00:00
+highest-temperature-in-ankara-on-april-9-2026-12c,Will the highest temperature in Ankara be 12°C on April 9?,0.9299999999999999,True,0.06526881720430124,7175.065398000001,2026-04-10 00:59:29+00:00
+highest-temperature-in-amsterdam-on-april-13-2026-17c,Will the highest temperature in Amsterdam be 17°C on April 13?,0.9305,True,0.06469102632993008,6385.949480000001,2026-04-14 01:41:51+00:00
+highest-temperature-in-nyc-on-april-6-2026-60-61f,Will the highest temperature in New York City be between 60-61°F on April 6?,0.9305,True,0.06469102632993008,6877.035406000001,2026-04-07 07:16:13+00:00
+highest-temperature-in-miami-on-april-14-2026-86-87f,Will the highest temperature in Miami be between 86-87°F on April 14?,0.9305,True,0.06469102632993008,5539.106522,2026-04-15 07:07:04+00:00
+highest-temperature-in-chongqing-on-april-13-2026-18c,Will the highest temperature in Chongqing be 18°C on April 13?,0.9305,True,0.06469102632993008,9653.157061,2026-04-12 19:08:55+00:00
+highest-temperature-in-mexico-city-on-april-13-2026-23c,Will the highest temperature in Mexico City be 23°C on April 13?,0.9315,True,0.0635373054213635,7339.209887000002,2026-04-13 22:47:33+00:00
+highest-temperature-in-warsaw-on-april-9-2026-6c,Will the highest temperature in Warsaw be 6°C on April 9?,0.9345,True,0.060090957731407275,7379.422870000001,2026-04-09 12:14:37+00:00
+ucl-bay1-rma1-2026-04-15-exact-score-3-0,Exact Score: FC Bayern München 3 - 0 Real Madrid CF?,0.935,True,0.05951871657753994,5285.309538999998,2026-04-16 04:33:36+00:00
+highest-temperature-in-wuhan-on-april-13-2026-20c,Will the highest temperature in Wuhan be 20°C on April 13?,0.935,True,0.05951871657753994,7188.817294999998,2026-04-13 08:15:35+00:00
+highest-temperature-in-wellington-on-april-9-2026-17c,Will the highest temperature in Wellington be 17°C on April 9?,0.935,True,0.05951871657753994,7972.135541,2026-04-08 16:59:15+00:00
+highest-temperature-in-los-angeles-on-april-7-2026-76-77f,Will the highest temperature in Los Angeles be between 76-77°F on April 7?,0.935,True,0.05951871657753994,7437.6207650000015,2026-04-08 10:03:45+00:00
+highest-temperature-in-taipei-on-april-6-2026-23c,Will the highest temperature in Taipei be 23°C on April 6?,0.935,True,0.05951871657753994,6023.364783,2026-04-06 04:47:47+00:00
+highest-temperature-in-istanbul-on-april-5-2026-17c,Will the highest temperature in Istanbul be 17°C on April 5?,0.935,True,0.05951871657753994,5544.377462000001,2026-04-05 23:34:41+00:00
+highest-temperature-in-miami-on-april-10-2026-84-85f,Will the highest temperature in Miami be between 84-85°F on April 10?,0.935,True,0.05951871657753994,7061.35477,2026-04-11 07:35:03+00:00
+ere-twe-vol-2026-04-10-vol,Will FC Volendam win on 2026-04-10?,0.935,True,0.05951871657753994,8400.80558,2026-04-11 00:08:31+00:00
+spl-dam-qad-2026-04-09-spread-home-1pt5,Spread: Damac Saudi Club (-1.5),0.935,True,0.05951871657753994,8194.197036000001,2026-04-09 21:52:57+00:00
+highest-temperature-in-los-angeles-on-april-6-2026-64-65f,Will the highest temperature in Los Angeles be between 64-65°F on April 6?,0.935,True,0.05951871657753994,7672.967103999999,2026-04-06 20:13:57+00:00
+highest-temperature-in-austin-on-april-5-2026-74forhigher,Will the highest temperature in Austin be 74°F or higher on April 5?,0.935,True,0.05951871657753994,6491.270182000004,2026-04-06 08:43:03+00:00
+highest-temperature-in-chicago-on-april-6-2026-44-45f,Will the highest temperature in Chicago be between 44-45°F on April 6?,0.935,True,0.05951871657753994,8791.265013999999,2026-04-06 09:17:39+00:00
+highest-temperature-in-shenzhen-on-april-7-2026-32corhigher,Will the highest temperature in Shenzhen be 32°C or higher on April 7?,0.935,True,0.05951871657753994,8852.838566,2026-04-07 20:19:31+00:00
+will-the-price-of-solana-be-between-70-80-on-april-13,Will the price of Solana be between $70 and $80 on April 13?,0.935,True,0.05951871657753994,5009.015653000001,2026-04-13 19:13:21+00:00
+highest-temperature-in-chongqing-on-april-13-2026-24corhigher,Will the highest temperature in Chongqing be 24°C or higher on April 13?,0.935,True,0.05951871657753994,5064.958819999999,2026-04-13 19:35:39+00:00
+will-jd-vance-say-trump-during-meetings-with-orbn,"Will JD Vance say ""Trump"" during meetings with Orbán?",0.935,True,0.05951871657753994,7185.597193000003,2026-04-07 18:34:37+00:00
+highest-temperature-in-sao-paulo-on-april-12-2026-29c,Will the highest temperature in Sao Paulo be 29°C on April 12?,0.935,True,0.05951871657753994,7863.835157000008,2026-04-13 06:25:45+00:00
+highest-temperature-in-hong-kong-on-april-8-2026-29corhigher,Will the highest temperature in Hong Kong be 29°C or higher on April 8?,0.935,True,0.05951871657753994,8662.879209000004,2026-04-09 05:48:27+00:00
+highest-temperature-in-sao-paulo-on-april-9-2026-23c,Will the highest temperature in Sao Paulo be 23°C on April 9?,0.935,True,0.05951871657753994,9306.157418,2026-04-09 14:41:31+00:00
+highest-temperature-in-moscow-on-april-13-2026-10c,Will the highest temperature in Moscow be 10°C on April 13?,0.935,True,0.05951871657753994,7736.362405,2026-04-13 13:04:37+00:00
+highest-temperature-in-beijing-on-april-13-2026-17c,Will the highest temperature in Beijing be 17°C on April 13?,0.935,True,0.05951871657753994,9199.173452,2026-04-12 21:01:13+00:00
+ucl-psg1-liv1-2026-04-08-exact-score-3-1,Exact Score: Paris Saint-Germain FC 3 - 1 Liverpool FC?,0.935,True,0.05951871657753994,9338.488859999998,2026-04-08 23:50:35+00:00
+highest-temperature-in-shanghai-on-april-12-2026-22c,Will the highest temperature in Shanghai be 22°C on April 12?,0.935,True,0.05951871657753994,8851.127941000006,2026-04-12 19:05:01+00:00
+will-the-total-number-of-tsa-passengers-for-april-3-be-less-than-3000000,"Will the total number of TSA passengers for April 3 be less than 3,000,000?",0.9365,True,0.05780565936999472,5450.483309000004,2026-04-06 12:40:15+00:00
+highest-temperature-in-toronto-on-april-6-2026-2c,Will the highest temperature in Toronto be 2°C on April 6?,0.937,True,0.05723585912486651,7752.729264000002,2026-04-06 18:52:23+00:00
+will-the-price-of-ethereum-be-between-2300-2400-on-april-9,"Will the price of Ethereum be between $2,300 and $2,400 on April 9?",0.9375,True,0.05666666666666665,9142.918207,2026-04-09 19:42:53+00:00
+will-aek-athens-reach-the-uefa-europa-conference-league-final,Will AEK Athens reach the UEFA Europa Conference League semifinal?,0.9385,True,0.055530101225359514,5450.820269999999,2026-04-17 00:07:12+00:00
+itsb-cat-mod-2026-03-17-spread-home-2pt5,Spread: US Catanzaro 1929 (-2.5),0.9390000000000001,True,0.05496272630457933,8955.750392,2026-04-15 05:09:04+00:00
+highest-temperature-in-toronto-on-april-6-2026-10corhigher,Will the highest temperature in Toronto be 10°C or higher on April 6?,0.9390000000000001,True,0.05496272630457933,7074.271367999996,2026-04-07 06:49:59+00:00
+highest-temperature-in-san-francisco-on-april-8-2026-74forhigher,Will the highest temperature in San Francisco be 74°F or higher on April 8?,0.9395,True,0.0543959552953699,9486.431218000002,2026-04-09 10:21:31+00:00
+highest-temperature-in-madrid-on-april-15-2026-28corhigher,Will the highest temperature in Madrid be 28°C or higher on April 15?,0.94,True,0.05382978723404253,5317.034437999999,2026-04-16 05:42:38+00:00
+highest-temperature-in-tel-aviv-on-april-13-2026-25c,Will the highest temperature in Tel Aviv be 25°C on April 13?,0.94,True,0.05382978723404253,5601.017091000001,2026-04-14 00:49:21+00:00
+lib-gua1-flu-2026-04-07-spread-home-2pt5,Spread: Deportivo La Guaira FC (-2.5),0.94,True,0.05382978723404253,6038.963751999999,2026-04-08 02:46:53+00:00
+highest-temperature-in-munich-on-april-7-2026-14c,Will the highest temperature in Munich be 14°C on April 7?,0.94,True,0.05382978723404253,6970.880324999999,2026-04-07 13:27:33+00:00
+highest-temperature-in-panama-city-on-april-6-2026-38corhigher,Will the highest temperature in Panama City be 38°C or higher on April 6?,0.94,True,0.05382978723404253,8511.596954999999,2026-04-07 07:28:57+00:00
+highest-temperature-in-wellington-on-april-13-2026-16c,Will the highest temperature in Wellington be 16°C on April 13?,0.94,True,0.05382978723404253,9047.755796000001,2026-04-12 16:35:35+00:00
+uel-bol-ast4-2026-04-09-spread-away-2pt5,Spread: Aston Villa FC (-2.5),0.94,True,0.05382978723404253,7133.306952999999,2026-04-10 00:20:55+00:00
+highest-temperature-in-beijing-on-april-8-2026-24c,Will the highest temperature in Beijing be 24°C on April 8?,0.94,True,0.05382978723404253,8775.830004000003,2026-04-08 19:00:51+00:00
+highest-temperature-in-busan-on-april-12-2026-23c,Will the highest temperature in Busan be 23°C on April 12?,0.94,True,0.05382978723404253,8196.659549,2026-04-12 17:52:15+00:00
+highest-temperature-in-chongqing-on-april-9-2026-30c,Will the highest temperature in Chongqing be 30°C on April 9?,0.94,True,0.05382978723404253,8473.634813,2026-04-09 19:58:51+00:00
+highest-temperature-in-san-francisco-on-april-11-2026-64-65f,Will the highest temperature in San Francisco be between 64-65°F on April 11?,0.94,True,0.05382978723404253,9766.660293999998,2026-04-12 10:45:01+00:00
+chi-qin-tie-2026-04-11-spread-away-2pt5,Spread: Liaoning Tieren FC (-2.5),0.94,True,0.05382978723404253,9061.054058999996,2026-04-11 17:09:05+00:00
+highest-temperature-in-tel-aviv-on-april-10-2026-24c,Will the highest temperature in Tel Aviv be 24°C on April 10?,0.94,True,0.05382978723404253,8922.606863,2026-04-10 23:56:23+00:00
+highest-temperature-in-chongqing-on-april-10-2026-30c,Will the highest temperature in Chongqing be 30°C on April 10?,0.94,True,0.05382978723404253,9359.154062000001,2026-04-10 19:24:45+00:00
+tur-fen-bes-2026-04-05-spread-home-2pt5,Spread: Fenerbahçe SK (-2.5),0.94,True,0.05382978723404253,9169.860214999997,2026-04-05 21:44:01+00:00
+trump-announces-attorney-general-pick-by-april-10-2026,"Trump announces Attorney General pick by April 10, 2026?",0.94,True,0.05382978723404253,8917.441408000002,2026-04-11 06:36:29+00:00
+highest-temperature-in-buenos-aires-on-april-5-2026-23c,Will the highest temperature in Buenos Aires be 23°C on April 5?,0.94,True,0.05382978723404253,6622.128381999996,2026-04-06 06:06:07+00:00
+highest-temperature-in-shenzhen-on-april-6-2026-25c,Will the highest temperature in Shenzhen be 25°C on April 6?,0.94,True,0.05382978723404253,5453.743294000001,2026-04-06 05:22:07+00:00
+highest-temperature-in-milan-on-april-11-2026-19c,Will the highest temperature in Milan be 19°C on April 11?,0.9405,True,0.05326422115895802,7709.723535999999,2026-04-11 15:04:21+00:00
+highest-temperature-in-houston-on-april-7-2026-80-81f,Will the highest temperature in Houston be between 80-81°F on April 7?,0.9405,True,0.05326422115895802,5817.278933000004,2026-04-08 08:48:45+00:00
+will-jon-rothstein-tweet-this-is-march-6170-times-during-march-madness,"Will Jon Rothstein tweet ""This is March"" 61–70 times during March Madness?",0.942,True,0.051571125265392766,5346.852367,2026-04-07 11:53:15+00:00
+will-ren-yahuasi-calamani-win-the-2026-la-paz-gubernatorial-election-682,Will René Yahuasi Calamani win the 2026 La Paz gubernatorial election?,0.9425,True,0.0510079575596818,7559.8037650000015,2026-04-12 17:27:59+00:00
+highest-temperature-in-tokyo-on-april-7-2026-16c,Will the highest temperature in Tokyo be 16°C on April 7?,0.943,True,0.0504453870625663,9069.243327,2026-04-06 18:40:07+00:00
+highest-temperature-in-madrid-on-april-10-2026-32corhigher,Will the highest temperature in Madrid be 32°C or higher on April 10?,0.9435,True,0.04988341282458931,8435.425671000005,2026-04-11 00:47:59+00:00
+highest-temperature-in-denver-on-april-8-2026-56forhigher,Will the highest temperature in Denver be 56°F or higher on April 8?,0.944,True,0.04932203389830515,8223.773409000003,2026-04-08 19:24:51+00:00
+highest-temperature-in-singapore-on-april-10-2026-30c,Will the highest temperature in Singapore be 30°C on April 10?,0.944,True,0.04932203389830515,9905.960037,2026-04-10 05:24:33+00:00
+highest-temperature-in-austin-on-april-6-2026-78-79f,Will the highest temperature in Austin be between 78-79°F on April 6?,0.944,True,0.04932203389830515,5271.992615000001,2026-04-07 08:35:09+00:00
+highest-temperature-in-tokyo-on-april-7-2026-15c,Will the highest temperature in Tokyo be 15°C on April 7?,0.9445,True,0.04876124933827431,5726.199761000002,2026-04-06 18:43:33+00:00
+highest-temperature-in-atlanta-on-april-10-2026-84-85f,Will the highest temperature in Atlanta be between 84-85°F on April 10?,0.9445,True,0.04876124933827431,7974.781413000002,2026-04-11 07:33:03+00:00
+epl-cry-new-2026-04-12-spread-home-2pt5,Spread: Crystal Palace FC (-2.5),0.945,True,0.04820105820105836,6532.47714,2026-04-12 17:41:07+00:00
+khamenei-of-tweets-april-3-april-10-2026-60plus,"Will Khamenei post 60+ posts from April 3 to April 10, 2026?",0.945,True,0.04820105820105836,5522.7921,2026-04-10 19:03:47+00:00
+highest-temperature-in-moscow-on-april-5-2026-13c,Will the highest temperature in Moscow be 13°C on April 5?,0.945,True,0.04820105820105836,7599.6209869999975,2026-04-06 01:20:13+00:00
+highest-temperature-in-toronto-on-april-9-2026-15c,Will the highest temperature in Toronto be 15°C on April 9?,0.945,True,0.04820105820105836,7624.293708999998,2026-04-09 18:22:55+00:00
+highest-temperature-in-miami-on-april-12-2026-84-85f,Will the highest temperature in Miami be between 84-85°F on April 12?,0.945,True,0.04820105820105836,8611.409281000004,2026-04-13 08:49:01+00:00
+highest-temperature-in-ankara-on-april-10-2026-5c,Will the highest temperature in Ankara be 5°C on April 10?,0.945,True,0.04820105820105836,8065.491049999997,2026-04-10 12:49:37+00:00
+sud-juv-cie-2026-04-09-spread-away-2pt5,Spread: CS Cienciano (-2.5),0.945,True,0.04820105820105836,6298.5375669999985,2026-04-10 02:43:59+00:00
+highest-temperature-in-madrid-on-april-12-2026-10corbelow,Will the highest temperature in Madrid be 10°C or below on April 12?,0.945,True,0.04820105820105836,8184.764125,2026-04-12 00:32:35+00:00
+highest-temperature-in-chongqing-on-april-11-2026-25c,Will the highest temperature in Chongqing be 25°C on April 11?,0.945,True,0.04820105820105836,8130.167813999995,2026-04-11 20:11:53+00:00
+highest-temperature-in-istanbul-on-april-5-2026-16c,Will the highest temperature in Istanbul be 16°C on April 5?,0.945,True,0.04820105820105836,5514.993284000003,2026-04-05 23:34:43+00:00
+will-madison-airs-market-cap-be-less-than-12pt0b-at-market-close-on-ipo-day,Will Madison Air’s market cap be less than $12.0B at market close on IPO day?,0.945,True,0.04820105820105836,5613.358182000001,2026-04-17 02:01:32+00:00
+highest-temperature-in-chicago-on-april-7-2026-44-45f,Will the highest temperature in Chicago be between 44-45°F on April 7?,0.945,True,0.04820105820105836,7922.9742590000005,2026-04-08 08:46:35+00:00
+highest-temperature-in-sao-paulo-on-april-7-2026-32c,Will the highest temperature in Sao Paulo be 32°C on April 7?,0.945,True,0.04820105820105836,5035.594594000003,2026-04-08 06:27:57+00:00
+ucl-psg1-liv1-2026-04-08-exact-score-3-0,Exact Score: Paris Saint-Germain FC 3 - 0 Liverpool FC?,0.945,True,0.04820105820105836,8948.920241000002,2026-04-08 23:48:25+00:00
+highest-temperature-in-kuala-lumpur-on-april-8-2026-36c,Will the highest temperature in Kuala Lumpur be 36°C on April 8?,0.945,True,0.04820105820105836,7626.931344000004,2026-04-08 19:09:01+00:00
+ucl-liv1-psg1-2026-04-14-exact-score-2-0,Exact Score: Liverpool FC 2 - 0 Paris Saint-Germain FC?,0.945,True,0.04820105820105836,7263.594578,2026-04-15 00:29:22+00:00
+ucl-bay1-rma1-2026-04-15-exact-score-3-2,Exact Score: FC Bayern München 3 - 2 Real Madrid CF?,0.945,True,0.04820105820105836,9280.399976999997,2026-04-16 03:50:48+00:00
+highest-temperature-in-atlanta-on-april-12-2026-78-79f,Will the highest temperature in Atlanta be between 78-79°F on April 12?,0.9455,True,0.047641459545214156,5062.557510000001,2026-04-12 18:38:23+00:00
+will-kateryna-lagno-win-the-2026-fide-womens-candidates-tournament,Will Kateryna Lagno win the 2026 FIDE Women's Candidates Tournament?,0.9455,True,0.047641459545214156,8579.317765,2026-04-15 17:57:50+00:00
+highest-temperature-in-tel-aviv-on-april-6-2026-19c,Will the highest temperature in Tel Aviv be 19°C on April 6?,0.946,True,0.04708245243128962,5150.131881999998,2026-04-06 09:19:43+00:00
+highest-temperature-in-milan-on-april-9-2026-19c,Will the highest temperature in Milan be 19°C on April 9?,0.9465,True,0.046524035921817315,5449.986994000008,2026-04-09 13:30:35+00:00
+epl-sun-tot-2026-04-12-spread-home-2pt5,Spread: Sunderland AFC (-2.5),0.947,True,0.04596620908130956,8904.533881000003,2026-04-12 17:51:45+00:00
+highest-temperature-in-moscow-on-april-11-2026-4c,Will the highest temperature in Moscow be 4°C on April 11?,0.948,True,0.04485232067510548,9856.826423999997,2026-04-11 13:10:13+00:00
+highest-temperature-in-warsaw-on-april-11-2026-15c,Will the highest temperature in Warsaw be 15°C on April 11?,0.9485,True,0.04429625724828679,5196.798468000002,2026-04-12 00:26:35+00:00
+highest-temperature-in-singapore-on-april-8-2026-30c,Will the highest temperature in Singapore be 30°C on April 8?,0.949,True,0.043740779768177036,8858.311350999998,2026-04-08 06:23:45+00:00
+highest-temperature-in-sao-paulo-on-april-6-2026-30c,Will the highest temperature in Sao Paulo be 30°C on April 6?,0.95,True,0.04263157894736836,9766.462757000003,2026-04-07 05:46:55+00:00
+highest-temperature-in-toronto-on-april-6-2026-9c,Will the highest temperature in Toronto be 9°C on April 6?,0.95,True,0.04263157894736836,8644.327239999999,2026-04-07 06:48:59+00:00
+highest-temperature-in-istanbul-on-april-9-2026-16c,Will the highest temperature in Istanbul be 16°C on April 9?,0.95,True,0.04263157894736836,8056.717166000003,2026-04-10 01:02:31+00:00
+highest-temperature-in-ankara-on-april-10-2026-3c,Will the highest temperature in Ankara be 3°C on April 10?,0.95,True,0.04263157894736836,6814.668989,2026-04-10 09:49:35+00:00
+spl-nsr-ett-2026-04-24-spread-away-1pt5,Spread: Al Ettifaq Saudi Club (-1.5),0.95,True,0.04263157894736836,5685.090249999999,2026-04-16 07:15:36+00:00
+highest-temperature-in-warsaw-on-april-7-2026-8c,Will the highest temperature in Warsaw be 8°C on April 7?,0.95,True,0.04263157894736836,7621.5830270000015,2026-04-07 13:33:45+00:00
+highest-temperature-in-ankara-on-april-11-2026-5c,Will the highest temperature in Ankara be 5°C on April 11?,0.95,True,0.04263157894736836,5836.709524000001,2026-04-11 10:30:01+00:00
+highest-temperature-in-sao-paulo-on-april-10-2026-27c,Will the highest temperature in Sao Paulo be 27°C on April 10?,0.951,True,0.04152471083070464,5077.090559000001,2026-04-11 05:37:15+00:00
+highest-temperature-in-tokyo-on-april-12-2026-18c,Will the highest temperature in Tokyo be 18°C on April 12?,0.9515,True,0.04097214923804527,9446.804168999997,2026-04-12 05:32:33+00:00
+tur-fen-riz-2026-04-17-spread-away-2pt5,Spread: Çaykur Rizespor (-2.5),0.9515,True,0.04097214923804527,5343.558366,2026-04-17 22:34:54+00:00
+highest-temperature-in-istanbul-on-april-11-2026-15corhigher,Will the highest temperature in Istanbul be 15°C or higher on April 11?,0.953,True,0.03931794333683115,7920.810550000004,2026-04-12 00:11:31+00:00
+highest-temperature-in-buenos-aires-on-april-6-2026-16c,Will the highest temperature in Buenos Aires be 16°C on April 6?,0.953,True,0.03931794333683115,6361.711306000004,2026-04-06 18:54:21+00:00
+meta-above-520-on-april-10-2026,Will Meta (META) finish week of April 6 above $520?,0.953,True,0.03931794333683115,5870.713,2026-04-10 22:07:41+00:00
+highest-temperature-in-seattle-on-april-8-2026-52-53f,Will the highest temperature in Seattle be between 52-53°F on April 8?,0.9535,True,0.03876769795490299,5130.9193620000015,2026-04-08 21:57:43+00:00
+highest-temperature-in-miami-on-april-9-2026-84-85f,Will the highest temperature in Miami be between 84-85°F on April 9?,0.9535,True,0.03876769795490299,9024.06956600001,2026-04-10 07:26:11+00:00
+highest-temperature-in-seattle-on-april-15-2026-54-55f,Will the highest temperature in Seattle be between 54-55°F on April 15?,0.9535,True,0.03876769795490299,5434.967235000003,2026-04-16 10:15:18+00:00
+bun-lei-moe-2026-04-11-spread-away-1pt5,Spread: Borussia Mönchengladbach (-1.5),0.954,True,0.03821802935010488,5641.515875999999,2026-04-11 18:35:01+00:00
+sea-sas-com-2026-04-17-spread-home-2pt5,Spread: US Sassuolo Calcio (-2.5),0.954,True,0.03821802935010488,5472.117051000001,2026-04-17 20:33:22+00:00
+highest-temperature-in-istanbul-on-april-7-2026-19corhigher,Will the highest temperature in Istanbul be 19°C or higher on April 7?,0.954,True,0.03821802935010488,5510.319158000002,2026-04-08 00:47:55+00:00
+over-10m-committed-to-the-fluent-public-sale,Over $10M committed to the Fluent public sale?,0.954,True,0.03821802935010488,8150.626799999999,2026-04-13 22:26:35+00:00
+highest-temperature-in-wuhan-on-april-13-2026-19c,Will the highest temperature in Wuhan be 19°C on April 13?,0.9545,True,0.03766893661602922,5575.0623000000005,2026-04-13 06:28:47+00:00
+highest-temperature-in-taipei-on-april-9-2026-34c,Will the highest temperature in Taipei be 34°C on April 9?,0.9545,True,0.03766893661602922,7731.0462929999985,2026-04-09 20:09:43+00:00
+highest-temperature-in-denver-on-april-15-2026-72-73f,Will the highest temperature in Denver be between 72-73°F on April 15?,0.9545,True,0.03766893661602922,6032.829151000001,2026-04-16 12:15:14+00:00
+highest-temperature-in-istanbul-on-april-11-2026-14c,Will the highest temperature in Istanbul be 14°C on April 11?,0.955,True,0.03712041884816753,5666.460962000001,2026-04-12 00:11:27+00:00
+highest-temperature-in-kuala-lumpur-on-april-9-2026-36corhigher,Will the highest temperature in Kuala Lumpur be 36°C or higher on April 9?,0.955,True,0.03712041884816753,7917.328673000001,2026-04-09 20:02:39+00:00
+highest-temperature-in-houston-on-april-10-2026-70-71f,Will the highest temperature in Houston be between 70-71°F on April 10?,0.955,True,0.03712041884816753,7177.470357999999,2026-04-10 08:18:05+00:00
+highest-temperature-in-toronto-on-april-9-2026-14c,Will the highest temperature in Toronto be 14°C on April 9?,0.955,True,0.03712041884816753,6562.217544999997,2026-04-09 18:22:31+00:00
+highest-temperature-in-munich-on-april-9-2026-12c,Will the highest temperature in Munich be 12°C on April 9?,0.955,True,0.03712041884816753,8114.232898000003,2026-04-09 13:25:23+00:00
+sea-nap-mil-2026-04-06-spread-home-2pt5,Spread: SSC Napoli (-2.5),0.955,True,0.03712041884816753,7364.5193,2026-04-06 23:34:37+00:00
+ucl-rma1-bay1-2026-04-07-exact-score-3-1,Exact Score: Real Madrid CF 3 - 1 FC Bayern München?,0.955,True,0.03712041884816753,5567.793375,2026-04-08 00:17:35+00:00
+ucl-psg1-liv1-2026-04-08-exact-score-0-0,Exact Score: Paris Saint-Germain FC 0 - 0 Liverpool FC?,0.955,True,0.03712041884816753,7575.158272,2026-04-08 23:50:41+00:00
+highest-temperature-in-moscow-on-april-9-2026-7c,Will the highest temperature in Moscow be 7°C on April 9?,0.955,True,0.03712041884816753,6701.970174999999,2026-04-09 23:12:01+00:00
+highest-temperature-in-munich-on-april-8-2026-19c,Will the highest temperature in Munich be 19°C on April 8?,0.955,True,0.03712041884816753,5911.993763000004,2026-04-09 01:01:11+00:00
+highest-temperature-in-istanbul-on-april-13-2026-11c,Will the highest temperature in Istanbul be 11°C on April 13?,0.955,True,0.03712041884816753,6923.6833050000005,2026-04-13 11:53:01+00:00
+will-the-us-flu-hospitalization-rate-per-100000-in-week-13-be-between-80-and-85,"Will the U.S. flu hospitalization rate per 100,000 in Week 13 be between 80 and 85?",0.955,True,0.03712041884816753,7623.018525999999,2026-04-10 17:59:37+00:00
+will-the-vegas-golden-knights-make-the-nhl-playoffs,Will the Vegas Golden Knights make the NHL Playoffs?,0.955,True,0.03712041884816753,6479.521773,2026-04-12 06:14:47+00:00
+will-trumps-approval-rating-be-between-38pt5-and-38pt9-on-april-10-2026,"Will Trump’s approval rating be between 38.5 and 38.9 on April 10, 2026?",0.955,True,0.03712041884816753,9109.307935999992,2026-04-11 13:54:37+00:00
+highest-temperature-in-munich-on-april-10-2026-16c,Will the highest temperature in Munich be 16°C on April 10?,0.9555,True,0.03657247514390361,8001.269192000005,2026-04-11 00:54:35+00:00
+highest-temperature-in-tel-aviv-on-april-7-2026-24corhigher,Will the highest temperature in Tel Aviv be 24°C or higher on April 7?,0.9555,True,0.03657247514390361,6596.302287999999,2026-04-08 00:44:49+00:00
+highest-temperature-in-hong-kong-on-april-7-2026-25c,Will the highest temperature in Hong Kong be 25°C on April 7?,0.9555,True,0.03657247514390361,5002.789369000003,2026-04-08 09:08:35+00:00
+highest-temperature-in-ankara-on-april-12-2026-7c,Will the highest temperature in Ankara be 7°C on April 12?,0.9555,True,0.03657247514390361,8603.141984000002,2026-04-12 11:39:25+00:00
+highest-temperature-in-paris-on-april-12-2026-11c,Will the highest temperature in Paris be 11°C on April 12?,0.9555,True,0.03657247514390361,5110.242811000001,2026-04-12 14:44:03+00:00
+highest-temperature-in-tel-aviv-on-april-9-2026-24c,Will the highest temperature in Tel Aviv be 24°C on April 9?,0.956,True,0.03602510460251041,5037.138717000001,2026-04-10 01:00:25+00:00
+lal-bil-vil-2026-04-12-spread-away-2pt5,Spread: Villarreal CF (-2.5),0.956,True,0.03602510460251041,6130.882959,2026-04-12 23:30:19+00:00
+highest-temperature-in-atlanta-on-april-13-2026-76-77f,Will the highest temperature in Atlanta be between 76-77°F on April 13?,0.956,True,0.03602510460251041,5831.941000999999,2026-04-13 21:33:23+00:00
+highest-temperature-in-sao-paulo-on-april-6-2026-31c,Will the highest temperature in Sao Paulo be 31°C on April 6?,0.956,True,0.03602510460251041,7240.932449000002,2026-04-07 05:46:05+00:00
+highest-temperature-in-houston-on-april-11-2026-74-75f,Will the highest temperature in Houston be between 74-75°F on April 11?,0.956,True,0.03602510460251041,5624.532375999998,2026-04-11 17:31:45+00:00
+highest-temperature-in-chongqing-on-april-12-2026-27c,Will the highest temperature in Chongqing be 27°C on April 12?,0.9565,True,0.03547830632514382,5465.167326000001,2026-04-12 19:06:23+00:00
+highest-temperature-in-buenos-aires-on-april-13-2026-21c,Will the highest temperature in Buenos Aires be 21°C on April 13?,0.957,True,0.03493207941483801,5785.999010000001,2026-04-13 16:52:29+00:00
+highest-temperature-in-houston-on-april-12-2026-64-65f,Will the highest temperature in Houston be between 64-65°F on April 12?,0.957,True,0.03493207941483801,6403.289000000001,2026-04-12 09:03:21+00:00
+highest-temperature-in-buenos-aires-on-april-12-2026-28c,Will the highest temperature in Buenos Aires be 28°C on April 12?,0.957,True,0.03493207941483801,5666.783604999999,2026-04-13 06:24:45+00:00
+will-hgni-hoydal-be-the-next-lgmaur-of-the-faroe-islands-following-the-2026-faroese-general-election,Will Høgni Hoydal be the next Løgmaður of the Faroe Islands following the 2026 Faroese general election?,0.9575,True,0.03438642297650119,8358.452118000005,2026-04-13 15:59:35+00:00
+will-the-price-of-ethereum-be-between-2300-2400-on-april-10,"Will the price of Ethereum be between $2,300 and $2,400 on April 10?",0.958,True,0.03384133611691032,8819.838319999997,2026-04-10 19:14:39+00:00
+highest-temperature-in-dallas-on-april-8-2026-70-71f,Will the highest temperature in Dallas be between 70-71°F on April 8?,0.958,True,0.03384133611691032,5519.353027999998,2026-04-08 20:00:15+00:00
+highest-temperature-in-wuhan-on-april-6-2026-20corbelow,Will the highest temperature in Wuhan be 20°C or below on April 6?,0.958,True,0.03384133611691032,5109.268545999999,2026-04-06 08:55:45+00:00
+highest-temperature-in-atlanta-on-april-9-2026-64-65f,Will the highest temperature in Atlanta be between 64-65°F on April 9?,0.9585,True,0.0332968179447053,5873.120484999998,2026-04-09 20:03:39+00:00
+sud-cam-juv-2026-04-16-spread-away-1pt5,Spread: CA Juventud (-1.5),0.9585,True,0.0332968179447053,8720.398188000003,2026-04-17 02:32:46+00:00
+highest-temperature-in-nyc-on-april-11-2026-68-69f,Will the highest temperature in New York City be between 68-69°F on April 11?,0.959,True,0.032752867570385875,6285.6415110000025,2026-04-12 08:03:05+00:00
+highest-temperature-in-dallas-on-april-7-2026-78-79f,Will the highest temperature in Dallas be between 78-79°F on April 7?,0.959,True,0.032752867570385875,5746.047049,2026-04-08 08:50:37+00:00
+will-there-be-4-buzzer-beaters-during-the-2026-mens-ncaa-tournament,Will there be 4+ buzzer beaters during the 2026 Men's NCAA Tournament?,0.9595,True,0.032209484106305426,6211.4405,2026-04-07 06:00:51+00:00
+highest-temperature-in-munich-on-april-10-2026-15c,Will the highest temperature in Munich be 15°C on April 10?,0.9595,True,0.032209484106305426,9356.513340000012,2026-04-11 00:53:43+00:00
+highest-temperature-in-buenos-aires-on-april-8-2026-18c,Will the highest temperature in Buenos Aires be 18°C on April 8?,0.9595,True,0.032209484106305426,5583.755099,2026-04-08 17:48:43+00:00
+highest-temperature-in-chongqing-on-april-12-2026-19c,Will the highest temperature in Chongqing be 19°C on April 12?,0.96,True,0.03166666666666674,6804.357167000002,2026-04-12 07:22:49+00:00
+highest-temperature-in-sao-paulo-on-april-11-2026-27c,Will the highest temperature in Sao Paulo be 27°C on April 11?,0.96,True,0.03166666666666674,6316.493284000004,2026-04-12 06:32:51+00:00
+ucl-liv1-psg1-2026-04-14-exact-score-0-3,Exact Score: Liverpool FC 0 - 3 Paris Saint-Germain FC?,0.96,True,0.03166666666666674,5975.689859000001,2026-04-15 00:28:16+00:00
+highest-temperature-in-istanbul-on-april-9-2026-17corhigher,Will the highest temperature in Istanbul be 17°C or higher on April 9?,0.96,True,0.03166666666666674,6696.850123999999,2026-04-10 01:00:33+00:00
+highest-temperature-in-wuhan-on-april-13-2026-26c,Will the highest temperature in Wuhan be 26°C on April 13?,0.96,True,0.03166666666666674,8774.762617000004,2026-04-13 19:32:17+00:00
+highest-temperature-in-mexico-city-on-april-7-2026-27c,Will the highest temperature in Mexico City be 27°C on April 7?,0.96,True,0.03166666666666674,5711.756418000002,2026-04-08 09:30:09+00:00
+sud-blo-riv-2026-04-08-spread-home-2pt5,Spread: Club Blooming (-2.5),0.96,True,0.03166666666666674,5372.853437000001,2026-04-09 05:33:41+00:00
+highest-temperature-in-sao-paulo-on-april-6-2026-25c,Will the highest temperature in Sao Paulo be 25°C on April 6?,0.96,True,0.03166666666666674,6523.8581289999975,2026-04-06 18:41:25+00:00
+chi-ygb-zhe-2026-04-10-spread-home-2pt5,Spread: Dalian Yingbo FC (-2.5),0.9,False,-1.01,8826.240203000001,2026-04-10 15:59:41+00:00
+will-jynxi-win-the-pogchamps-chess-tournament,Will Jynxzi win the PogChamps chess tournament?,0.905,False,-1.01,6385.252968000001,2026-04-11 03:44:27+00:00
+will-open-reach-5-25-by-april-13-2026,Will Opendoor Technologies Inc. (OPEN) hit (HIGH) $5.25 Week of April 13 2026?,0.94,False,-1.01,5834.0521499999995,2026-04-16 16:59:58+00:00
+lal-cel-ovi-2026-04-12-spread-away-1pt5,Spread: Real Oviedo (-1.5),0.9299999999999999,False,-1.01,8114.119502000002,2026-04-12 21:18:05+00:00
+highest-temperature-in-san-francisco-on-april-8-2026-70-71f,Will the highest temperature in San Francisco be between 70-71°F on April 8?,0.91,False,-1.01,7202.7325519999995,2026-04-09 10:20:13+00:00
+tur-riz-sam-2026-04-09-spread-home-2pt5,Spread: Çaykur Rizespor (-2.5),0.9,False,-1.01,7265.409974999998,2026-04-09 21:03:55+00:00
+col-ray-aek1-2026-04-09-spread-home-2pt5,Spread: Rayo Vallecano de Madrid (-2.5),0.905,False,-1.01,9325.999587,2026-04-09 20:53:07+00:00
+will-anaconda-be-the-top-global-netflix-movie-this-week,"Will ""Anaconda"" be the top global Netflix movie this week?",0.92,False,-1.01,9221.316209000006,2026-04-07 22:49:35+00:00
+ucl-rma1-bay1-2026-04-07-exact-score-1-2,Exact Score: Real Madrid CF 1 - 2 FC Bayern München?,0.91,False,-1.01,6889.864706999997,2026-04-08 00:18:23+00:00
+highest-temperature-in-istanbul-on-april-6-2026-18c,Will the highest temperature in Istanbul be 18°C on April 6?,0.88,False,-1.01,9348.000709999995,2026-04-07 00:17:47+00:00
+highest-temperature-in-mexico-city-on-april-5-2026-26c,Will the highest temperature in Mexico City be 26°C on April 5?,0.91,False,-1.01,7309.416349999999,2026-04-06 09:24:43+00:00
+will-trump-say-strait-of-trump-or-trump-strait-in-april,"Will Trump say ""Strait of Trump"" or ""Trump Strait"" in April?",0.915,False,-1.01,9418.134391,2026-04-15 16:46:04+00:00

@@ -1,0 +1,35 @@
+# Large historical data (not needed for daily ops; keep local for re-analysis)
+data/markets.parquet
+data/markets_ext.parquet
+data/prices.parquet
+data/prices_ext.parquet
+data/event_ids.parquet
+
+# Workbook answers (one-off backtest; regenerate if needed)
+data/workbook/answer_key.parquet
+data/workbook/student_answers.json
+data/workbook/answers_batch_*.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Claude Code local settings
+.claude/
+CLAUDE.md
+
+# Local secrets (NEVER commit PAT)
+.env
+*.token
+*.pat
+.pat
+secrets/
