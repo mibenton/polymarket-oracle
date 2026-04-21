@@ -26,6 +26,13 @@ PNL_FILE = Path("data/oracle_pnl.csv")
 
 BANKROLL_START = 10_000.0  # paper bankroll
 
+# Realistic UA to bypass Cloudflare bot detection on cloud IPs
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                  "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Accept": "application/json",
+}
+
 
 def load_decisions() -> list[dict]:
     if not DEC_FILE.exists():
@@ -105,12 +112,16 @@ def ingest():
 
 def fetch_market_state(slug: str) -> dict | None:
     try:
-        r = requests.get(GAMMA, params={"slug": slug, "limit": 1}, timeout=15)
+        r = requests.get(GAMMA, params={"slug": slug, "limit": 1},
+                         headers=HEADERS, timeout=15)
+        if r.status_code != 200:
+            print(f"    [warn {slug}] status {r.status_code}: {r.text[:80]}")
+            return None
         data = r.json()
         if data:
             return data[0] if isinstance(data, list) else data
-    except Exception:
-        pass
+    except Exception as e:
+        print(f"    [exc {slug}] {type(e).__name__}: {e}")
     return None
 
 

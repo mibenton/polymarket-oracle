@@ -9,6 +9,7 @@ Filters:
 Appends to data/oracle_decisions.jsonl so oracle_portfolio.py --ingest can open positions.
 """
 import json
+import subprocess
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 import pandas as pd
@@ -20,6 +21,9 @@ MAX_DAYS_TO_CLOSE = 30
 
 
 def main():
+    if not CANDIDATES.exists():
+        print(f"[skip] {CANDIDATES} not found — run cycle6_bias_scanner.py first")
+        return
     df = pd.read_csv(CANDIDATES)
     print(f"Raw candidates: {len(df)}")
 

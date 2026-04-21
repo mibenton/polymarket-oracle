@@ -19,6 +19,13 @@ GAMMA = "https://gamma-api.polymarket.com/markets"
 OUT = Path("data/results/bias_candidates.csv")
 OUT.parent.mkdir(parents=True, exist_ok=True)
 
+# Use a realistic browser UA to bypass Cloudflare bot challenges on cloud IPs
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                  "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Accept": "application/json",
+}
+
 # Bias pockets refined through:
 # 1) pattern_calibration.py (original rank by EV)
 # 2) cycle6_stability.py (must survive all 3 sub-windows with same sign)
@@ -69,13 +76,18 @@ def fetch_open_markets(limit_pages: int = 20) -> list[dict]:
                 "limit": 500, "offset": offset,
                 "volume_num_min": 2000,
                 "order": "volume", "ascending": "false",
-            }, timeout=30)
+            }, headers=HEADERS, timeout=30)
+            if r.status_code != 200:
+                print(f"  [warn] status {r.status_code} at offset {offset}: {r.text[:100]}")
+                break
             data = r.json()
             if not isinstance(data, list) or not data:
+                print(f"  [warn] non-list or empty response at offset {offset}: {str(data)[:100]}")
                 break
             out.extend(data)
             time.sleep(0.2)
-        except Exception:
+        except Exception as e:
+            print(f"  [exc] offset {offset}: {type(e).__name__}: {e}")
             break
     return out
 
