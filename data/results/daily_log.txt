@@ -89,3 +89,118 @@ No new decisions (all slugs already recorded).
 Next: python oracle_portfolio.py --ingest
 No new BUY decisions to ingest.
 No closed positions yet.
+===== 2026-04-22T01:09:09Z =====
+Checking 19 open positions...
+    [warn atp-sharipo-riedi-2026-04-21] status 403: Host not in allowlist
+  atp-sharipo-riedi-2026-04-21: fetch failed
+    [warn fl1-psg-nan-2026-04-22-total-3pt5] status 403: Host not in allowlist
+  fl1-psg-nan-2026-04-22-total-3pt5: fetch failed
+    [warn epl-wol-tot-2026-04-25-tot] status 403: Host not in allowlist
+  epl-wol-tot-2026-04-25-tot: fetch failed
+    [warn wta-gibson-arango-2026-04-21] status 403: Host not in allowlist
+  wta-gibson-arango-2026-04-21: fetch failed
+    [warn bun-hsv-hof-2026-04-25-hof] status 403: Host not in allowlist
+  bun-hsv-hof-2026-04-25-hof: fetch failed
+    [warn highest-temperature-in-seoul-on-april-22-2026-16c] status 403: Host not in allowlist
+  highest-temperature-in-seoul-on-april-22-2026-16c: fetch failed
+    [warn kbo-lg-sam-2026-04-17] status 403: Host not in allowlist
+  kbo-lg-sam-2026-04-17: fetch failed
+    [warn atp-bertola-jianu-2026-04-21] status 403: Host not in allowlist
+  atp-bertola-jianu-2026-04-21: fetch failed
+    [warn highest-temperature-in-london-on-april-22-2026-15c] status 403: Host not in allowlist
+  highest-temperature-in-london-on-april-22-2026-15c: fetch failed
+    [warn ufc-dav3-adr8-2026-04-25] status 403: Host not in allowlist
+  ufc-dav3-adr8-2026-04-25: fetch failed
+    [warn kbo-ssg-nc-2026-04-17] status 403: Host not in allowlist
+  kbo-ssg-nc-2026-04-17: fetch failed
+    [warn wta-townsen-boulter-2026-04-21] status 403: Host not in allowlist
+  wta-townsen-boulter-2026-04-21: fetch failed
+    [warn highest-temperature-in-madrid-on-april-22-2026-24c] status 403: Host not in allowlist
+  highest-temperature-in-madrid-on-april-22-2026-24c: fetch failed
+    [warn highest-temperature-in-toronto-on-april-22-2026-19corhigher] status 403: Host not in allowlist
+  highest-temperature-in-toronto-on-april-22-2026-19corhigher: fetch failed
+    [warn atp-djere-caniato-2026-04-21] status 403: Host not in allowlist
+  atp-djere-caniato-2026-04-21: fetch failed
+    [warn ufc-ale-raf3-2026-04-25] status 403: Host not in allowlist
+  ufc-ale-raf3-2026-04-25: fetch failed
+    [warn atp-topo-cretu-2026-04-21] status 403: Host not in allowlist
+  atp-topo-cretu-2026-04-21: fetch failed
+    [warn atp-wu-droguet-2026-04-21] status 403: Host not in allowlist
+  atp-wu-droguet-2026-04-21: fetch failed
+    [warn atp-gueymar-kennedy-2026-04-20] status 403: Host not in allowlist
+  atp-gueymar-kennedy-2026-04-20: fetch failed
+Bankroll start: $10,000
+
+OPEN positions: 19
+  [YES] $   200 @ 0.580  edge=1340bps conf=3/5  Gwangju: Marat Sharipov vs Leandro Riedi
+  [YES] $   200 @ 0.520  edge=1340bps conf=3/5  Paris Saint-Germain FC vs. FC Nantes: O/U 3.5
+  [YES] $   200 @ 0.570  edge=1340bps conf=3/5  Will Tottenham Hotspur FC win on 2026-04-25?
+  [YES] $   200 @ 0.510  edge=1340bps conf=3/5  Madrid Open: Talia Gibson vs Emiliana Arango
+  [YES] $   200 @ 0.540  edge=1340bps conf=3/5  Will TSG 1899 Hoffenheim win on 2026-04-25?
+  [YES] $   200 @ 0.310  edge=2800bps conf=3/5  Will the highest temperature in Seoul be 16°C on April 22?
+  [YES] $   200 @ 0.560  edge=1340bps conf=3/5  KBO: LG Twins vs. Samsung Lions
+  [YES] $   200 @ 0.550  edge=1340bps conf=3/5  Rome: Remy Bertola vs Filip Jianu
+  [YES] $   200 @ 0.330  edge=2800bps conf=3/5  Will the highest temperature in London be 15°C on April 22?
+  [YES] $   200 @ 0.540  edge=1340bps conf=3/5  UFC Fight Night: Davey Grant vs. Adrian Luna Martinetti (Ban
+  [YES] $   200 @ 0.530  edge=1340bps conf=3/5  KBO: SSG Landers vs. NC Dinos
+  [YES] $   200 @ 0.530  edge=1340bps conf=3/5  Madrid Open: Taylor Townsend vs Katie Boulter
+  [YES] $   200 @ 0.300  edge=2800bps conf=3/5  Will the highest temperature in Madrid be 24°C on April 22?
+  [YES] $   200 @ 0.320  edge=2800bps conf=3/5  Will the highest temperature in Toronto be 19°C or higher on
+  [YES] $   200 @ 0.580  edge=1340bps conf=3/5  Rome: Laslo Djere vs Carlo Alberto Caniato
+  [YES] $   200 @ 0.560  edge=1340bps conf=3/5  UFC Fight Night: Alexander Hernandez vs. Rafa Garcia (Lightw
+  [YES] $   200 @ 0.570  edge=1340bps conf=3/5  Rome: Marko Topo vs Cezar Cretu
+  [YES] $   200 @ 0.530  edge=1340bps conf=3/5  Madrid Open, Qualification: Yibing Wu vs Titouan Droguet
+  [YES] $   200 @ 0.600  edge=1340bps conf=3/5  Savannah: Sascha Gueymard-Wayenburg vs Jack Kennedy
+
+CLOSED positions: 0
+
+Capital at risk (open): $3,800 (38.0% of bankroll)
+Cycle 6 Bias Scanner — statistical pockets only, no Claude judgment
+
+  [A] weather            0.25-0.40  side=YES  expected EV=+28.0%  (historical n=413)
+  [A] sports_global      0.50-0.60  side=YES  expected EV=+13.4%  (historical n=115)
+  [C] lol                0.50-0.60  side=NO  expected EV=+18.4%  (historical n=247)
+  [B] other              0.70-0.80  side=NO  expected EV=+21.7%  (historical n=209)
+  [B] tweet_count        0.10-0.25  side=NO  expected EV=+16.0%  (historical n=22)
+
+  [warn] status 403 at offset 0: Host not in allowlist
+Fetched 0 open markets
+No current matches.
+OPEN: 19
+Raw candidates: 295
+Tier A: 48
+In future (12h-30d window): 21
+
+Selected 20 positions:
+
+                             slug best_side  entry_price  volume  hours_to_close  expected_ev_pct
+         ufc-jaf-luc10-2026-04-25       YES         0.51  176084       98.846394             13.4
+     atp-sharipo-riedi-2026-04-21       YES         0.58  100728      147.846395             13.4
+fl1-psg-nan-2026-04-22-total-3pt5       YES         0.52   23259       15.846395             13.4
+       epl-wol-tot-2026-04-25-tot       YES         0.57   22277       84.846395             13.4
+     wta-gibson-arango-2026-04-21       YES         0.51   19836      151.846395             13.4
+       bun-hsv-hof-2026-04-25-hof       YES         0.54   10687       87.346395             13.4
+            kbo-lg-sam-2026-04-17       YES         0.56    4955       56.346395             13.4
+     atp-bertola-jianu-2026-04-21       YES         0.55    9637      150.846395             13.4
+            kbo-ssg-nc-2026-04-17       YES         0.53    4375       56.346395             13.4
+         ufc-dav3-adr8-2026-04-25       YES         0.54    6659       98.846394             13.4
+   wta-townsen-boulter-2026-04-21       YES         0.53    8012      151.846395             13.4
+          ufc-ale-raf3-2026-04-25       YES         0.56    5166       98.846394             13.4
+     atp-djere-caniato-2026-04-21       YES         0.58    7341      153.846395             13.4
+        atp-topo-cretu-2026-04-21       YES         0.57    4427      150.846395             13.4
+   atp-gueymar-kennedy-2026-04-20       YES         0.60    3715      132.846395             13.4
+        atp-wu-droguet-2026-04-21       YES         0.53    4156      151.846395             13.4
+     atp-valle-izquier-2026-04-21       YES         0.52    4000      150.846395             13.4
+   wta-teichma-osuigwe-2026-04-21       YES         0.51    3936      151.846395             13.4
+           kbo-doo-lot-2026-04-21       YES         0.58    3138      152.346395             13.4
+       epl-mun-bre-2026-04-27-mun       YES         0.52    2571      137.846395             13.4
+
+[APPENDED] 4 new decisions to data/oracle_decisions.jsonl
+
+Next: python oracle_portfolio.py --ingest
+Opened 4 new paper positions.
+  [YES] $200 @ 0.520  edge=1340bps  Rome: Enrico Dalla Valle vs Nikolas Sanchez Izquierdo
+  [YES] $200 @ 0.510  edge=1340bps  Oeiras 4: Jil Teichmann vs Whitney Osuigwe
+  [YES] $200 @ 0.580  edge=1340bps  KBO: Doosan Bears vs. Lotte Giants
+  [YES] $200 @ 0.520  edge=1340bps  Will Manchester United FC win on 2026-04-27?
+No closed positions yet.
