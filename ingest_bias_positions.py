@@ -27,9 +27,12 @@ def main():
     df = pd.read_csv(CANDIDATES)
     print(f"Raw candidates: {len(df)}")
 
-    # Tier A only
-    df = df[df["tier"] == "A"].copy()
-    print(f"Tier A: {len(df)}")
+    # Tier A or A+ only
+    df = df[df["tier"].isin(["A", "A+"])].copy()
+    print(f"Tier A / A+: {len(df)}")
+    if df.empty:
+        print("No candidates.")
+        return
 
     # Parse end_date and filter future
     now = datetime.now(timezone.utc)

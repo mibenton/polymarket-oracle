@@ -36,14 +36,18 @@ HEADERS = {
 # Tier C = deep-dive confirmed but small sample
 BIAS_POCKETS = [
     # (category_key, price_lo, price_hi, best_side, expected_ev_pct, tier, source_n)
-    # Tier A (stable across 3 sub-windows)
-    ("weather",         0.25, 0.40, "YES", 28.0, "A", 413),
-    ("sports_global",   0.50, 0.60, "YES", 13.4, "A", 115),
-    # Tier C (deep-dive isolated, watch sample size)
-    ("lol",             0.50, 0.60, "NO",  18.4, "C", 247),  # LoL-specific from esports
-    # Tier B (strong raw bias, not cross-window stable but large n)
-    ("other",           0.70, 0.80, "NO",  21.7, "B", 209),
-    ("tweet_count",     0.10, 0.25, "NO",  16.0, "B", 22),
+    # Tier A+ (large sample, confirmed in paper trade 4/22-4/24)
+    ("weather_exact",   0.25, 0.40, "YES", 28.5, "A+", 416),
+    # === STRATEGIES BELOW ARE NOW EXCLUDED ===
+    # Disabled after paper-trade failure 4/22-4/24:
+    # Sports (12 bets, 17% win vs expected 55%, -$1710 PnL)
+    # ("sports_global", 0.50, 0.60, "YES", 13.4, "A", 115),
+    # LoL (untested in paper trade, sample small)
+    # ("lol", 0.50, 0.60, "NO", 18.4, "C", 247),
+    # Other (inconsistent, tier B)
+    # ("other", 0.70, 0.80, "NO", 21.7, "B", 209),
+    # Tweet count (sample too small)
+    # ("tweet_count", 0.10, 0.25, "NO", 16.0, "B", 22),
 ]
 
 
@@ -62,8 +66,11 @@ def categorize(slug):
         return "esports"
     if any(k in s for k in ["tweets", "tweet-", "-of-posts-", "-of-tweets-"]):
         return "tweet_count"
-    if "highest-temperature" in s or "temperature-in-" in s:
-        return "weather"
+    # Weather: only "exact bucket" markets have confirmed edge (n=416, EV +28%)
+    # Cumulative ("or higher" / "or below") are excluded — negative EV in history
+    if ("highest-temperature" in s or "temperature-in-" in s) and \
+       not any(k in s for k in ["orhigher", "orabove", "orbelow", "orlower"]):
+        return "weather_exact"
     return "other"
 
 
