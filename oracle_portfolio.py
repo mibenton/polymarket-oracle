@@ -111,17 +111,23 @@ def ingest():
 
 
 def fetch_market_state(slug: str) -> dict | None:
-    try:
-        r = requests.get(GAMMA, params={"slug": slug, "limit": 1},
-                         headers=HEADERS, timeout=15)
-        if r.status_code != 200:
-            print(f"    [warn {slug}] status {r.status_code}: {r.text[:80]}")
+    """Query gamma-api. Default returns only open markets, so retry with closed=true if empty."""
+    for closed in ("false", "true"):
+        try:
+            r = requests.get(
+                GAMMA,
+                params={"slug": slug, "limit": 1, "closed": closed},
+                headers=HEADERS, timeout=15,
+            )
+            if r.status_code != 200:
+                print(f"    [warn {slug}] status {r.status_code}: {r.text[:80]}")
+                return None
+            data = r.json()
+            if data and isinstance(data, list):
+                return data[0]
+        except Exception as e:
+            print(f"    [exc {slug}] {type(e).__name__}: {e}")
             return None
-        data = r.json()
-        if data:
-            return data[0] if isinstance(data, list) else data
-    except Exception as e:
-        print(f"    [exc {slug}] {type(e).__name__}: {e}")
     return None
 
 
