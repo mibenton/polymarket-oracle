@@ -4,14 +4,25 @@ Statistical-bias scanner + paper-trade ledger for Polymarket.
 
 ## Overview
 
-Six cycles of research distilled to **two structurally stable biases** (both cross-window verified):
+**Cycle 7 update (2026-04-24)**: Paper trade of 16 Tier-A positions over 2 days
+revealed that only ONE bias is real:
 
-| Pocket | Side | Historical n | Expected EV |
+| Pocket | Historical | Paper trade result | Status |
 |---|---|---|---|
-| weather 0.25-0.40 | BUY YES | 413 | +28% |
-| sports_global 0.50-0.60 | BUY YES | 115 | +13% |
+| **weather_exact 0.25-0.40 YES** | +28% EV, n=416, CI [+13, +44] | 2/4 wins, +$473 | ✅ **Survives** |
+| sports_global 0.50-0.60 YES | +13% EV, n=115, 3-window stable | 2/12 wins, -$1,710 | ❌ **Killed** |
 
-Plus tier-B/C pockets under watch. See `cycle6_bias_scanner.py` for full table.
+### Why weather survived and sports died
+
+- **Weather exact-bucket**: has structural reason for mispricing — retail anchors on
+  "this specific temperature won't hit" and underprices the 2-3 buckets nearest the
+  forecast mean. Mechanism explains the +9pp bias.
+- **Sports 0.5-0.6 YES**: no structural reason found. Cross-window stability was
+  incidental. When paper-traded 12 times (10 tennis), win rate collapsed to 17% vs
+  expected 55%.
+
+### Rule update
+Only trade biases with **both** cross-window stability AND explainable mechanism.
 
 ## Daily Workflow (remote agent)
 
