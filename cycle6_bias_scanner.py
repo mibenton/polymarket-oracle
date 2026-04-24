@@ -50,10 +50,11 @@ BIAS_POCKETS = [
     ("weather_exact",   0.10, 0.15, "YES", 130.0, "B+", 63),
     # Tier B (low-prob, different city dynamics per C10)
     ("weather_exact",   0.10, 0.15, "YES", 19.0, "B",  347),
-    # Cycle 17: crypto "between X-Y" range markets
-    ("crypto_range",    0.10, 0.20, "YES", 40.0, "A",   40),
-    # Cycle 34: Box office low-price tail (n=22) +224%. High-variance but huge payoffs.
-    ("box_office",      0.02, 0.10, "YES", 100.0, "A",  22),
+    # Cycle 42 refined: crypto "between X-Y" 0.10-0.15 is real sweet spot (n=26, +81%)
+    ("crypto_range",    0.10, 0.15, "YES", 80.0, "A",   26),
+    # Cycle 34/42: Box office 0.02-0.10 high-variance tail (big payoffs)
+    # Keep but lower stake (C limit); also tighten 0-0.02 is excluded (all lose)
+    ("box_office",      0.03, 0.10, "YES", 100.0, "C",  22),
     # === STRATEGIES BELOW ARE NOW EXCLUDED ===
     # Disabled after paper-trade failure 4/22-4/24:
     # Sports (12 bets, 17% win vs expected 55%, -$1710 PnL)

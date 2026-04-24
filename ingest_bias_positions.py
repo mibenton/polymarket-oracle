@@ -36,8 +36,8 @@ def main():
     df = pd.read_csv(CANDIDATES)
     print(f"Raw candidates: {len(df)}")
 
-    # Accept tiers S++, S+, S, A+, A, B++, B+, B
-    df = df[df["tier"].isin(["S++", "S+", "S", "A+", "A", "B++", "B+", "B"])].copy()
+    # Accept tiers S++, S+, S, A+, A, B++, B+, B, C (C for high-variance opportunistic)
+    df = df[df["tier"].isin(["S++", "S+", "S", "A+", "A", "B++", "B+", "B", "C"])].copy()
     print(f"Tiers: {len(df)}")
     if df.empty:
         print("No candidates.")
