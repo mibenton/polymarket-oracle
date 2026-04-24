@@ -64,6 +64,9 @@ BIAS_POCKETS = [
     # Cycle 76: Soccer O/U totals 0.50-0.60 YES → +30% mean, 70% win (n=44)
     # +46% with vol>100k (n=10)
     ("soccer_total",    0.50, 0.60, "YES", 30.0, "A",  44),
+    # Cycle 88: Sports match 0.60-0.80 YES → BUY NO has +12% edge (n=187)
+    # Heavy favorites are over-priced in sports_global (football/tennis/UFC etc)
+    ("sports_global",   0.60, 0.80, "NO",  12.0, "B", 187),
     # === STRATEGIES BELOW ARE NOW EXCLUDED ===
     # Disabled after paper-trade failure 4/22-4/24:
     # Sports (12 bets, 17% win vs expected 55%, -$1710 PnL)
@@ -84,6 +87,8 @@ def categorize(slug):
         return "lol"
     if any(k in s for k in ["nba-", "mlb-", "nhl-", "ncaa", "cbb-", "cfb-"]):
         return "sports_us"
+    # Cycle 88: sports match at 0.6-0.8 YES → BUY NO has edge (+12% PnL, 36% win)
+    # Different from 0.5-0.6 which we killed as YES-side in Cycle 7.
     if any(k in s for k in ["ufc-", "atp-", "wta-", "fif-", "fl1-", "bun-",
                              "ucl-", "uel-", "epl-", "euroleague", "kbo-", "pga"]):
         return "sports_global"
