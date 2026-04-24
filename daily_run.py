@@ -62,6 +62,11 @@ def main():
     print("="*70)
     run(f"{py} cycle9_auto_tier.py")
 
+    print("\n" + "="*70)
+    print("STEP 6b: Strategy health monitor")
+    print("="*70)
+    run(f"{py} cycle65_health_monitor.py")
+
     if args.dry:
         print("\n[dry mode] skipping git push")
         return
