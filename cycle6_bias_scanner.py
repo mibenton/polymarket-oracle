@@ -46,6 +46,8 @@ BIAS_POCKETS = [
     # Tier A+ (wider price band, still positive when vol>=20k)
     ("weather_exact",   0.22, 0.25, "YES", 25.0, "A+", 170),
     ("weather_exact",   0.36, 0.40, "YES", 20.0, "A+", 75),
+    # Cycle 29: B+ strict (preferred cities + vol>=20k) = +175% mean PnL (n=63)
+    ("weather_exact",   0.10, 0.15, "YES", 130.0, "B+", 63),
     # Tier B (low-prob, different city dynamics per C10)
     ("weather_exact",   0.10, 0.15, "YES", 19.0, "B",  347),
     # Cycle 17: crypto "between X-Y" range markets
@@ -156,6 +158,13 @@ PER_POCKET_RULES = {
         "preferred": ["beijing","taipei","dallas","milan","wellington","nyc","chicago",
                       "shanghai","paris"],
     },
+    # B+ same preferred as B but require_preferred and vol>=20k
+    "B+": {
+        "banned": [],
+        "preferred": ["beijing","taipei","dallas","milan","wellington","nyc","chicago",
+                      "shanghai","paris"],
+        "require_preferred": True,
+    },
 }
 
 
@@ -198,8 +207,8 @@ def match_market(m: dict) -> list[dict]:
         # S+ tier requires city in preferred list
         if rules.get("require_preferred") and not is_preferred:
             continue
-        # S+ tier also requires volume >=20k
-        if tier == "S+" and float(m.get("volumeNum") or 0) < 20_000:
+        # S+ and B+ also require volume >=20k
+        if tier in ("S+", "B+") and float(m.get("volumeNum") or 0) < 20_000:
             continue
 
         # You want to bet best_side. Entry is ask of that side
