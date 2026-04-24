@@ -133,6 +133,50 @@ def extract_city(slug: str) -> str:
     return m.group(1).rstrip("-")
 
 
+# Cycle 32 finding: local close hour matters heavily
+# 0-6h local = +117.6% PnL, 12-18h = -77.3%, 18-24h = -34.5%
+# Offsets for common cities (hours from UTC)
+CITY_TZ_OFFSET = {
+    'nyc': -4, 'miami': -4, 'atlanta': -4, 'chicago': -5, 'dallas': -5,
+    'austin': -5, 'denver': -6, 'los-angeles': -7, 'san-francisco': -7,
+    'seattle': -7, 'houston': -5, 'phoenix': -7, 'vancouver': -7,
+    'montreal': -4, 'toronto': -4,
+    'london': 1, 'paris': 2, 'madrid': 2, 'rome': 2, 'milan': 2,
+    'berlin': 2, 'munich': 2, 'amsterdam': 2, 'warsaw': 2, 'vienna': 2,
+    'moscow': 3, 'istanbul': 3, 'tel-aviv': 3, 'ankara': 3, 'athens': 3,
+    'helsinki': 3, 'oslo': 2, 'stockholm': 2,
+    'dubai': 4, 'riyadh': 3, 'cairo': 3,
+    'delhi': 5, 'mumbai': 5, 'lucknow': 5,
+    'beijing': 8, 'shanghai': 8, 'hong-kong': 8, 'chengdu': 8,
+    'chongqing': 8, 'wuhan': 8, 'shenzhen': 8, 'taipei': 8,
+    'seoul': 9, 'tokyo': 9,
+    'singapore': 8, 'jakarta': 7, 'bangkok': 7, 'kuala-lumpur': 8,
+    'manila': 8, 'ho-chi-minh': 7,
+    'sydney': 10, 'melbourne': 10, 'wellington': 12, 'auckland': 12,
+    'sao-paulo': -3, 'buenos-aires': -3, 'lima': -5, 'mexico-city': -6,
+}
+
+
+def local_close_hour(end_date_iso: str, city: str) -> int:
+    """Return local-time hour (0-23) of close for city."""
+    if not end_date_iso:
+        return -1
+    try:
+        from datetime import datetime
+        dt = datetime.fromisoformat(end_date_iso.replace("Z", "+00:00"))
+        offset = CITY_TZ_OFFSET.get(city, 0)
+        return (dt.hour + offset) % 24
+    except Exception:
+        return -1
+
+
+def is_good_close_hour(hour: int) -> bool:
+    """Cycle 32: 0-6h local close = +117% PnL, 6-12h OK, 12-24h NEGATIVE."""
+    if hour < 0:
+        return True  # unknown, don't filter
+    return 0 <= hour < 12  # before local noon only
+
+
 # Cycle 10: per-pocket banlist + Cycle 21 preferred list
 PER_POCKET_RULES = {
     # S+ = strictest filter = ONLY cities from C21 +122% mean PnL sample
@@ -209,6 +253,11 @@ def match_market(m: dict) -> list[dict]:
             continue
         # S+ and B+ also require volume >=20k
         if tier in ("S+", "B+") and float(m.get("volumeNum") or 0) < 20_000:
+            continue
+        # Cycle 32: reject markets closing in city local afternoon/evening (12-24h)
+        # Applies to ALL weather tiers (universal edge uplift)
+        local_h = local_close_hour(m.get("endDate"), city) if city else -1
+        if pc_cat == "weather_exact" and not is_good_close_hour(local_h):
             continue
 
         # You want to bet best_side. Entry is ask of that side
