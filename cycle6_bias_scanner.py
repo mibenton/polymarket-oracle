@@ -50,11 +50,19 @@ BIAS_POCKETS = [
     ("weather_exact",   0.10, 0.15, "YES", 130.0, "B+", 63),
     # Tier B (low-prob, different city dynamics per C10)
     ("weather_exact",   0.10, 0.15, "YES", 19.0, "B",  347),
+    # Cycle 80: weather_exact extreme-tail 0-0.05 YES = +42% PnL (n=515)
+    # 3% win rate, 20x+ payouts. Very high variance tail arb.
+    ("weather_exact",   0.02, 0.05, "YES", 42.0, "C",  515),
+    # Cycle 80: weather_exact 0.30-0.35 narrow band = +46% (n=70, 47% win)
+    ("weather_exact",   0.30, 0.35, "YES", 46.0, "A+", 70),
     # Cycle 42 refined: crypto "between X-Y" 0.10-0.15 is real sweet spot (n=26, +81%)
     ("crypto_range",    0.10, 0.15, "YES", 80.0, "A",   26),
     # Cycle 34/42: Box office 0.02-0.10 high-variance tail (big payoffs)
     # Keep but lower stake (C limit); also tighten 0-0.02 is excluded (all lose)
     ("box_office",      0.03, 0.10, "YES", 100.0, "C",  22),
+    # Cycle 76: Soccer O/U totals 0.50-0.60 YES → +30% mean, 70% win (n=44)
+    # +46% with vol>100k (n=10)
+    ("soccer_total",    0.50, 0.60, "YES", 30.0, "A",  44),
     # === STRATEGIES BELOW ARE NOW EXCLUDED ===
     # Disabled after paper-trade failure 4/22-4/24:
     # Sports (12 bets, 17% win vs expected 55%, -$1710 PnL)
@@ -91,6 +99,11 @@ def categorize(slug):
     # Cycle 34: box office opening/ 2nd/3rd weekend markets → low price bucket +224% (n=22)
     if "box-office" in s or "opening-weekend" in s:
         return "box_office"
+    # Cycle 76: Soccer totals 0.50-0.60 YES = +30%, 70% win
+    if any(k in s for k in ["fif-","epl-","ucl-","uel-","bun-","fl1-","es2-","aus-",
+                             "bra-","efa-","lal-","sai-"]) and \
+       any(k in s for k in ["-total-", "total-"]):
+        return "soccer_total"
     # Weather: exact-bucket only (not cumulative). Cycle 9 segmentation found:
     # - Tropical climate: edge ~0 → EXCLUDE
     # - East-Asian capitals (Beijing/Taipei/Shanghai/Seoul/Singapore): negative → EXCLUDE
