@@ -1,13 +1,38 @@
 category,pocket,best_side,entry_price,expected_ev_pct,tier,historical_n,slug,question,mid,spread,volume,end_date
-weather_exact,0.25-0.40,YES,0.27,28.5,A+,416,highest-temperature-in-london-on-april-24-2026-17c,Will the highest temperature in London be 17°C on April 24?,0.265,0.01,6490,2026-04-24T12:00:00Z
-weather_exact,0.25-0.40,YES,0.36,28.5,A+,416,highest-temperature-in-shanghai-on-april-24-2026-20c,Will the highest temperature in Shanghai be 20°C on April 24?,0.345,0.03,4890,2026-04-24T12:00:00Z
-weather_exact,0.25-0.40,YES,0.39,28.5,A+,416,highest-temperature-in-nyc-on-april-24-2026-64-65f,Will the highest temperature in New York City be between 64-65°F on April 24?,0.385,0.01,3441,2026-04-24T12:00:00Z
-weather_exact,0.25-0.40,YES,0.33,28.5,A+,416,highest-temperature-in-tokyo-on-april-24-2026-19c,Will the highest temperature in Tokyo be 19°C on April 24?,0.315,0.03,3393,2026-04-24T12:00:00Z
-weather_exact,0.25-0.40,YES,0.31,28.5,A+,416,highest-temperature-in-madrid-on-april-24-2026-21c,Will the highest temperature in Madrid be 21°C on April 24?,0.3,0.02,3253,2026-04-24T12:00:00Z
-weather_exact,0.25-0.40,YES,0.31,28.5,A+,416,highest-temperature-in-atlanta-on-april-24-2026-82-83f,Will the highest temperature in Atlanta be between 82-83°F on April 24?,0.305,0.01,3064,2026-04-24T12:00:00Z
-weather_exact,0.25-0.40,YES,0.31,28.5,A+,416,highest-temperature-in-singapore-on-april-24-2026-33c,Will the highest temperature in Singapore be 33°C on April 24?,0.305,0.01,2828,2026-04-24T12:00:00Z
-weather_exact,0.25-0.40,YES,0.31,28.5,A+,416,highest-temperature-in-beijing-on-april-24-2026-25c,Will the highest temperature in Beijing be 25°C on April 24?,0.305,0.01,2388,2026-04-24T12:00:00Z
-weather_exact,0.25-0.40,YES,0.37,28.5,A+,416,highest-temperature-in-beijing-on-april-24-2026-26c,Will the highest temperature in Beijing be 26°C on April 24?,0.365,0.01,2346,2026-04-24T12:00:00Z
-weather_exact,0.25-0.40,YES,0.3,28.5,A+,416,highest-temperature-in-paris-on-april-24-2026-23c,Will the highest temperature in Paris be 23°C on April 24?,0.295,0.01,2331,2026-04-24T12:00:00Z
-weather_exact,0.25-0.40,YES,0.28,28.5,A+,416,highest-temperature-in-lucknow-on-april-24-2026-43c,Will the highest temperature in Lucknow be 43°C on April 24?,0.27,0.02,2187,2026-04-24T12:00:00Z
-weather_exact,0.25-0.40,YES,0.27,28.5,A+,416,highest-temperature-in-munich-on-april-24-2026-19c,Will the highest temperature in Munich be 19°C on April 24?,0.26,0.02,2164,2026-04-24T12:00:00Z
+weather_exact,0.20-0.40,YES,0.21,28.5,A+,706,highest-temperature-in-miami-on-april-24-2026-78-79f,Will the highest temperature in Miami be between 78-79°F on April 24?,0.2,0.02,6795,2026-04-24T12:00:00Z
+weather_exact,0.20-0.40,YES,0.23,28.5,A+,706,highest-temperature-in-chicago-on-april-24-2026-70-71f,Will the highest temperature in Chicago be between 70-71°F on April 24?,0.215,0.03,6390,2026-04-24T12:00:00Z
+weather_exact,0.20-0.40,YES,0.41,28.5,A+,706,highest-temperature-in-paris-on-april-24-2026-22c,Will the highest temperature in Paris be 22°C on April 24?,0.395,0.03,6787,2026-04-24T12:00:00Z
+weather_exact,0.20-0.40,YES,0.36,28.5,A+,706,highest-temperature-in-nyc-on-april-24-2026-64-65f,Will the highest temperature in New York City be between 64-65°F on April 24?,0.35,0.02,6020,2026-04-24T12:00:00Z
+weather_exact,0.20-0.40,YES,0.39,28.5,A+,706,highest-temperature-in-madrid-on-april-24-2026-23c,Will the highest temperature in Madrid be 23°C on April 24?,0.385,0.01,5904,2026-04-24T12:00:00Z
+weather_exact,0.20-0.40,YES,0.21,28.5,A+,706,highest-temperature-in-london-on-april-24-2026-19c,Will the highest temperature in London be 19°C on April 24?,0.205,0.01,11927,2026-04-24T12:00:00Z
+weather_exact,0.20-0.40,YES,0.29,28.5,A+,706,highest-temperature-in-atlanta-on-april-24-2026-80-81f,Will the highest temperature in Atlanta be between 80-81°F on April 24?,0.28,0.02,5880,2026-04-24T12:00:00Z
+weather_exact,0.20-0.40,YES,0.23,28.5,A+,706,highest-temperature-in-miami-on-april-24-2026-82-83f,Will the highest temperature in Miami be between 82-83°F on April 24?,0.225,0.01,5338,2026-04-24T12:00:00Z
+weather_exact,0.20-0.40,YES,0.23,28.5,A+,706,highest-temperature-in-helsinki-on-april-24-2026-12c,Will the highest temperature in Helsinki be 12°C on April 24?,0.215,0.03,4453,2026-04-24T12:00:00Z
+weather_exact,0.20-0.40,YES,0.24,28.5,A+,706,highest-temperature-in-toronto-on-april-24-2026-12c,Will the highest temperature in Toronto be 12°C on April 24?,0.235,0.01,4451,2026-04-24T12:00:00Z
+weather_exact,0.20-0.40,YES,0.26,28.5,A+,706,highest-temperature-in-tel-aviv-on-april-24-2026-25c,Will the highest temperature in Tel Aviv be 25°C on April 24?,0.22,0.08,3009,2026-04-24T12:00:00Z
+weather_exact,0.20-0.40,YES,0.28,28.5,A+,706,highest-temperature-in-los-angeles-on-april-24-2026-70-71f,Will the highest temperature in Los Angeles be between 70-71°F on April 24?,0.27,0.02,3264,2026-04-24T12:00:00Z
+weather_exact,0.20-0.40,YES,0.34,28.5,A+,706,highest-temperature-in-shanghai-on-april-25-2026-21c,Will the highest temperature in Shanghai be 21°C on April 25?,0.33,0.02,3433,2026-04-25T12:00:00Z
+weather_exact,0.20-0.40,YES,0.36,28.5,A+,706,highest-temperature-in-london-on-april-25-2026-20c,Will the highest temperature in London be 20°C on April 25?,0.355,0.01,2933,2026-04-25T12:00:00Z
+weather_exact,0.20-0.40,YES,0.33,28.5,A+,706,highest-temperature-in-chicago-on-april-25-2026-58-59f,Will the highest temperature in Chicago be between 58-59°F on April 25?,0.315,0.03,2912,2026-04-25T12:00:00Z
+weather_exact,0.20-0.40,YES,0.32,28.5,A+,706,highest-temperature-in-hong-kong-on-april-25-2026-26c,Will the highest temperature in Hong Kong be 26°C on April 25?,0.315,0.01,3211,2026-04-25T12:00:00Z
+weather_exact,0.20-0.40,YES,0.24,28.5,A+,706,highest-temperature-in-london-on-april-25-2026-19c,Will the highest temperature in London be 19°C on April 25?,0.23,0.02,2349,2026-04-25T12:00:00Z
+weather_exact,0.20-0.40,YES,0.31,28.5,A+,706,highest-temperature-in-singapore-on-april-25-2026-33c,Will the highest temperature in Singapore be 33°C on April 25?,0.3,0.02,2574,2026-04-25T12:00:00Z
+weather_exact,0.20-0.40,YES,0.32,28.5,A+,706,highest-temperature-in-london-on-april-25-2026-21c,Will the highest temperature in London be 21°C on April 25?,0.315,0.01,2617,2026-04-25T12:00:00Z
+weather_exact,0.20-0.40,YES,0.38,28.5,A+,706,highest-temperature-in-ankara-on-april-24-2026-14c,Will the highest temperature in Ankara be 14°C on April 24?,0.37,0.02,2750,2026-04-24T12:00:00Z
+weather_exact,0.20-0.40,YES,0.38,28.5,A+,706,highest-temperature-in-hong-kong-on-april-25-2026-25c,Will the highest temperature in Hong Kong be 25°C on April 25?,0.375,0.01,2761,2026-04-25T12:00:00Z
+weather_exact,0.20-0.40,YES,0.24,28.5,A+,706,highest-temperature-in-denver-on-april-24-2026-72-73f,Will the highest temperature in Denver be between 72-73°F on April 24?,0.235,0.01,2226,2026-04-24T12:00:00Z
+weather_exact,0.20-0.40,YES,0.39,28.5,A+,706,highest-temperature-in-nyc-on-april-24-2026-62-63f,Will the highest temperature in New York City be between 62-63°F on April 24?,0.375,0.03,11248,2026-04-24T12:00:00Z
+weather_exact,0.20-0.40,YES,0.32,28.5,A+,706,highest-temperature-in-london-on-april-24-2026-17c,Will the highest temperature in London be 17°C on April 24?,0.305,0.03,12073,2026-04-24T12:00:00Z
+weather_exact,0.20-0.40,YES,0.37,28.5,A+,706,highest-temperature-in-singapore-on-april-25-2026-32c,Will the highest temperature in Singapore be 32°C on April 25?,0.36,0.02,2011,2026-04-25T12:00:00Z
+weather_exact,0.20-0.40,YES,0.4,28.5,A+,706,highest-temperature-in-los-angeles-on-april-24-2026-72-73f,Will the highest temperature in Los Angeles be between 72-73°F on April 24?,0.385,0.03,2120,2026-04-24T12:00:00Z
+weather_exact,0.20-0.40,YES,0.26,28.5,A+,706,highest-temperature-in-istanbul-on-april-24-2026-17c,Will the highest temperature in Istanbul be 17°C on April 24?,0.235,0.05,2410,2026-04-24T12:00:00Z
+weather_exact,0.10-0.15,YES,0.12,19.0,B,347,highest-temperature-in-seoul-on-april-25-2026-20c,Will the highest temperature in Seoul be 20°C on April 25?,0.11,0.02,9504,2026-04-25T12:00:00Z
+weather_exact,0.10-0.15,YES,0.15,19.0,B,347,highest-temperature-in-milan-on-april-24-2026-26c,Will the highest temperature in Milan be 26°C on April 24?,0.14,0.02,4698,2026-04-24T12:00:00Z
+weather_exact,0.10-0.15,YES,0.13,19.0,B,347,highest-temperature-in-seattle-on-april-24-2026-58-59f,Will the highest temperature in Seattle be between 58-59°F on April 24?,0.125,0.01,3417,2026-04-24T12:00:00Z
+weather_exact,0.10-0.15,YES,0.16,19.0,B,347,highest-temperature-in-denver-on-april-24-2026-68-69f,Will the highest temperature in Denver be between 68-69°F on April 24?,0.145,0.03,3417,2026-04-24T12:00:00Z
+weather_exact,0.10-0.15,YES,0.145,19.0,B,347,highest-temperature-in-warsaw-on-april-24-2026-18c,Will the highest temperature in Warsaw be 18°C on April 24?,0.1285,0.033,4442,2026-04-24T12:00:00Z
+weather_exact,0.10-0.15,YES,0.15,19.0,B,347,highest-temperature-in-singapore-on-april-25-2026-34c,Will the highest temperature in Singapore be 34°C on April 25?,0.135,0.03,3801,2026-04-25T12:00:00Z
+weather_exact,0.10-0.15,YES,0.14,19.0,B,347,highest-temperature-in-beijing-on-april-25-2026-26c,Will the highest temperature in Beijing be 26°C on April 25?,0.125,0.03,2369,2026-04-25T12:00:00Z
+weather_exact,0.10-0.15,YES,0.14,19.0,B,347,highest-temperature-in-sao-paulo-on-april-24-2026-27c,Will the highest temperature in Sao Paulo be 27°C on April 24?,0.1255,0.029,2636,2026-04-24T12:00:00Z
+weather_exact,0.10-0.15,YES,0.11,19.0,B,347,highest-temperature-in-madrid-on-april-25-2026-22c,Will the highest temperature in Madrid be 22°C on April 25?,0.1,0.02,2344,2026-04-25T12:00:00Z
+weather_exact,0.10-0.15,YES,0.12,19.0,B,347,highest-temperature-in-buenos-aires-on-april-24-2026-22c,Will the highest temperature in Buenos Aires be 22°C on April 24?,0.105,0.03,2333,2026-04-24T12:00:00Z

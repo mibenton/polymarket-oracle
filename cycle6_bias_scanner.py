@@ -36,8 +36,11 @@ HEADERS = {
 # Tier C = deep-dive confirmed but small sample
 BIAS_POCKETS = [
     # (category_key, price_lo, price_hi, best_side, expected_ev_pct, tier, source_n)
-    # Tier A+ (large sample, confirmed in paper trade 4/22-4/24)
-    ("weather_exact",   0.25, 0.40, "YES", 28.5, "A+", 416),
+    # Tier A+ (large sample, confirmed in paper trade 4/22-4/24, +$1178 on 16 bets)
+    ("weather_exact",   0.20, 0.40, "YES", 28.5, "A+", 706),
+    # Tier B (Cycle 8 bucket-detector finding; mechanism same as A+ but lower prob bucket)
+    # n=347, bias +2.6pp, net EV +19%, forward test pending
+    ("weather_exact",   0.10, 0.15, "YES", 19.0, "B",  347),
     # === STRATEGIES BELOW ARE NOW EXCLUDED ===
     # Disabled after paper-trade failure 4/22-4/24:
     # Sports (12 bets, 17% win vs expected 55%, -$1710 PnL)

@@ -1,10 +1,10 @@
-"""Convert Tier-A bias scanner hits into paper-trade decisions.
+"""Convert bias scanner hits into paper-trade decisions.
 
 Filters:
-  - Tier A only (stable across 3 sub-windows)
+  - Tier A+ (size 2% bankroll) and Tier B (size 1% bankroll)
   - end_date in future and within 30 days
   - volume >= $2000 (tradeable)
-  - limit to 20 positions max (diversification)
+  - limit to 25 new positions per run (diversification)
 
 Appends to data/oracle_decisions.jsonl so oracle_portfolio.py --ingest can open positions.
 """
@@ -16,8 +16,10 @@ import pandas as pd
 
 CANDIDATES = Path("data/results/bias_candidates.csv")
 DEC_FILE = Path("data/oracle_decisions.jsonl")
-MAX_POSITIONS = 20
+MAX_NEW_POSITIONS = 25
 MAX_DAYS_TO_CLOSE = 30
+# stake sizing per tier
+STAKE_PCT = {"A+": 0.02, "A": 0.02, "B": 0.01, "C": 0.005}
 
 
 def main():
@@ -27,9 +29,9 @@ def main():
     df = pd.read_csv(CANDIDATES)
     print(f"Raw candidates: {len(df)}")
 
-    # Tier A or A+ only
-    df = df[df["tier"].isin(["A", "A+"])].copy()
-    print(f"Tier A / A+: {len(df)}")
+    # Tier A+, A, or B
+    df = df[df["tier"].isin(["A+", "A", "B"])].copy()
+    print(f"Tier A+/A/B: {len(df)}")
     if df.empty:
         print("No candidates.")
         return
@@ -50,10 +52,14 @@ def main():
     # Dedupe by slug (same market can appear twice from PSG O/U etc)
     df = df.drop_duplicates(subset=["slug"]).copy()
 
-    # Rank: prefer higher volume (liquidity), slightly shorter to close
+    # Rank: prefer higher volume × tier priority × not-too-soon
+    tier_prio = {"A+": 4, "A": 3, "B": 2, "C": 1}
+    df["tier_prio"] = df["tier"].map(tier_prio).fillna(0)
     df["hours_to_close"] = (df["end_dt"] - now).dt.total_seconds() / 3600
-    df["rank"] = df["volume"] / (df["hours_to_close"] + 24)
-    df = df.sort_values("rank", ascending=False).head(MAX_POSITIONS)
+    # Rank: high-volume + higher-tier + at least 6h away (avoid near-expiry slippage)
+    df["rank"] = df["tier_prio"] * 1000 + df["volume"] / (df["hours_to_close"] + 24)
+    # Prefer 4/25+ (skip overdone 4/24 which we already have 12 open)
+    df = df.sort_values("rank", ascending=False).head(MAX_NEW_POSITIONS)
 
     print(f"\nSelected {len(df)} positions:\n")
     print(df[["slug", "best_side", "entry_price", "volume", "hours_to_close",
@@ -74,6 +80,7 @@ def main():
         if r["slug"] in existing_slugs:
             continue
         side = "BUY YES" if r["best_side"] == "YES" else "BUY NO"
+        stake = STAKE_PCT.get(r["tier"], 0.01)
         dec = {
             "slug": r["slug"],
             "decision": side,
@@ -81,14 +88,15 @@ def main():
             "p_market_yes": r["mid"],
             "entry_price": r["entry_price"],
             "edge_bps": int(r["expected_ev_pct"] * 100),
-            "confidence": 3,  # moderate, stability-backed
-            "position_pct_of_bankroll": 0.02,  # 2% per position
-            "reasoning": f"Tier-A statistical bias pocket ({r['category']} {r['pocket']}, "
-                         f"historical n={r['historical_n']}, cross-window stable). "
+            "confidence": 3 if r["tier"] in ("A+","A") else 2,
+            "position_pct_of_bankroll": stake,
+            "tier": r["tier"],
+            "reasoning": f"Tier-{r['tier']} bias pocket ({r['category']} {r['pocket']}, "
+                         f"historical n={r['historical_n']}). "
                          f"Expected EV {r['expected_ev_pct']:.1f}% after fee.",
             "question": r["question"],
             "end_date": r["end_date"],
-            "source": "bias_scanner_TA",
+            "source": "bias_scanner",
             "analyzed_at": now.isoformat(),
         }
         new_lines.append(json.dumps(dec, ensure_ascii=False))
