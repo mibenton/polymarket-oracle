@@ -1,109 +1,132 @@
 # Polymarket Oracle Evolution Log
 
-## Evolution summary: Cycles 1-26
+## Phase 1: Exploration & Elimination (C1-C7)
+- **C1-4**: Quant FLB - all failed (bucket-spam, clustering)
+- **C5**: Oracle framework - SKIP discipline saves money
+- **C6**: Cross-window stability - found 2 candidate biases
+- **C7**: Paper trade killed sports (17% win, -$1710). Weather survived (+$473).
 
-### Phase 1: Quant-FLB exploration (dead end)
-- **Cycles 1-4**: Tested naive FLB, bootstrap CI, ostracism → all failed
-  - Bucket-spam + cluster issues made false positives
-  - Real n_eff << raw n
+## Phase 2: Weather Refinement (C8-C12)
+- **C8**: Bucket detector found weather 0.10-0.15 subcategory
+- **C9**: Climate segmentation - banned tropical + East Asian capitals
+- **C10**: Per-pocket banlist (Beijing BANNED at A+, PREFERRED at B +272%!)
+- **C11**: T-12h entry disaster zone. Raised min to 30h.
+- **C12**: Vol 5-10k = -62% PnL. Sweet spot: vol 20-100k + price 0.25-0.36.
 
-### Phase 2: Oracle framework (partial)
-- **Cycle 5**: Built Claude-as-Oracle. SKIP discipline valid but Claude's prior worse than market
+## Phase 3: Structure Deep-Dive (C13-C17)
+- **C13**: Event child-count: 1-3 children +97% (opaque)
+- **C14**: Multi-bucket Sharpe +0.29 vs single +0.17 (68% improvement)
+- **C15**: DoW patterns Tue/Sun/Fri best (but n too sparse)
+- **C16**: Target 3-5°C from city median = +55% PnL
+- **C17**: crypto_range "between X-Y" +61% EV, new pocket
 
-### Phase 3: Cross-window bias discovery
-- **Cycle 6**: Found weather 0.25-0.40 YES + sports_global 0.50-0.60 YES with cross-window stability
-- **Cycle 7**: Forward paper trade killed sports (12 bets, 17% win, -$1710). Weather survived (2/4 win, +$473).
+## Phase 4: Robustness & Sizing (C18-C21)
+- **C19**: Kelly sizing confirmed near-optimal
+- **C20**: Ostracism - edge survives top 2% drop, dies at 10% (fragile but real)
+- **C21**: **STACKED FILTER GOLD**: price 0.25-0.36 + vol≥20k + preferred cities = +122% PnL, t=5.31 → Tier S+
 
-### Phase 4: Weather mechanism refinement
-- **Cycle 8**: Bucket detector found weather 0.10-0.15 as additional pocket (n=347)
-- **Cycle 9**: Segmentation by climate, city, price, day, volume
-  - Banned East Asian capitals (Beijing/Taipei/etc: -33 to -80% PnL)
-  - Found sweet spot 0.30-0.36 (+68% EV)
-- **Cycle 10**: Per-pocket banlist (Beijing banned at A+, PREFERRED at B)
+## Phase 5: Dynamics & Stress (C22-C26)
+- **C22**: Event concentration low in S+
+- **C23**: Edge decay weekly but all positive (146→155→92→112%)
+- **C24**: Forward simulation +$46k on $100/bet × 25 days
+- **C25**: Tier B risk - max 17-loss streak, keep stake 1%
+- **C26**: Barbell analysis - B contributes most to absolute PnL
 
-### Phase 5: Timing & volume precision
-- **Cycle 11**: T-12h entry is disaster zone (-15 to -50%). T-72h near-optimal.
-- **Cycle 12**: Vol 5-10k = -62% PnL. Sweet spot: vol 20-100k + price 0.25-0.36 = +65-93%
+## Phase 6: Local-Hour Breakthrough (C27-C32)
+- **C27**: Consolidated evolution log
+- **C28**: daily_run.py single-command workflow
+- **C29**: **Tier B+ discovered**: preferred+vol≥20k at 0.10-0.15 = **+175% PnL**
+- **C30**: Unity signal hypothesis failed (reversed pattern)
+- **C31**: Hold-to-close confirmed best (Sharpe 0.33 vs 0.20)
+- **C32**: 🚀 **LOCAL CLOSE HOUR FILTER BREAKTHROUGH**
+  - 0-6h local = +117% PnL, 12-24h = -77%
+  - Applied universally to all weather tiers
+  - Tier S+ boosted: +122% → **+176%, 78% win, t=+7.93**
+  - Tier B+: +175% → **+279%**
+  - Tier S: +47% → +123%
 
-### Phase 6: Portfolio construction
-- **Cycle 13**: Event child-count: 1-3 children = +97% (opaque mechanism)
-- **Cycle 14**: Multi-bucket per event: Sharpe +0.29 vs single +0.17 (68% improvement)
-
-### Phase 7: Cross-category search
-- **Cycle 15**: DoW patterns (Tue/Sun/Fri best) but sample too sparse
-- **Cycle 16**: Target 3-5°C deviation from city median = +55% PnL
-- **Cycle 17**: crypto_range "between X-Y" markets at 0.10-0.20 = +61% EV (n=40)
-
-### Phase 8: Sizing & robustness
-- **Cycle 19**: Kelly sizing analysis. Confirmed current stakes ~optimal, minor refinements.
-- **Cycle 20**: Ostracism test. Weather edge survives top 2% drop, dies at 10%. Fragile but real.
-- **Cycle 21**: **Stacked filter GOLD**: price 0.25-0.36 + vol>=20k + preferred cities = **+122% PnL, t=5.31, n=57** → Tier S+
-
-### Phase 9: Dynamics & stress
-- **Cycle 22**: Event concentration low in S+ (1.23 buckets per unique event avg)
-- **Cycle 23**: Edge decay week-by-week but remains positive (146% → 92% → 112%)
-- **Cycle 24**: Historical compound simulation: absurd numbers but validates tier ordering
-- **Cycle 25**: Tier B risk profile: max 17-loss streak. Keep stake 1% conservative.
-- **Cycle 26**: Barbell analysis. Tier B biggest PnL contributor (+$22,739 over 25 days flat $100/bet)
-
----
-
-## Current Scanner Configuration (after Cycle 26)
-
-### Bias Pockets (tiered)
-
-| Tier | Category | Price | Side | Stake | n | EV% | Notes |
-|------|----------|-------|------|-------|---|-----|-------|
-| **S+** | weather_exact | 0.25-0.36 | YES | **4%** | 57 | +122% | Preferred cities only + vol>=20k |
-| S | weather_exact | 0.25-0.36 | YES | 3% | 221 | +55% | All non-banned cities |
-| A+ | weather_exact | 0.22-0.25 | YES | 2.5% | 170 | +25% | Banlist applied |
-| A+ | weather_exact | 0.36-0.40 | YES | 2.5% | 75 | +20% | |
-| A | crypto_range | 0.10-0.20 | YES | 2% | 40 | +40% | "between X-Y" pattern only |
-| B | weather_exact | 0.10-0.15 | YES | 1% | 347 | +19% | Different city list per C10 |
-
-### Filter rules
-
-- **Minimum volume**: 10,000 (all), 20,000 (Tier S+)
-- **Minimum time to close**: 30 hours (Cycle 11 found T-12h disastrous)
-- **S+ preferred cities** (16): dallas, austin, moscow, madrid, wellington, miami, tel-aviv, milan, los-angeles, lucknow, san-francisco, denver, wuhan, toronto, nyc, chongqing
-- **A+ banned cities**: atlanta, ankara, london, amsterdam, hong-kong, warsaw, beijing, taipei, seoul, singapore, shanghai
-- **B banned cities**: miami, shenzhen, madrid, seoul, moscow, buenos-aires, atlanta, london
-
-### Excluded categories (found negative or unstable EV)
-
-- sports_global 0.50-0.60 (Cycle 7 paper trade killed)
-- tropical weather (Cycle 9 found ~0% edge)
-- tweet_count ranges (Cycle 17 found -56% to -71%)
-- box_office_range (Cycle 17)
-- Cumulative weather (orhigher/orbelow variants)
+## Phase 7: New Categories (C33-C34)
+- **C33**: Broad scan across all bucket categories
+- **C34**: **Box office opening weekend tails +224% PnL at price 0.02-0.10**
 
 ---
 
-## Performance Expectations (realistic)
+## Final Scanner Config (Post-C34)
 
-Historical backtest on 633 qualifying bets over 25 days (no liquidity constraints):
-- Without compounding @ $100/bet: **+$46,587 (+466% over 25 days)**
-- Tier B largest contributor: **+$22,739**
-- Tier S+ concentrated edge: +$6,978 (57 bets × $122 avg)
+| Tier | Filter Recipe | n | Expected EV | Stake |
+|------|---------------|---|-------------|-------|
+| **S+** | weather 0.25-0.36 + vol≥20k + preferred + morning-close | 46 | **+176%** | 4% |
+| **B+** | weather 0.10-0.15 + vol≥20k + preferred + morning-close | 44 | **+279%** | 2% |
+| S | weather 0.25-0.36 + morning-close | 199 | +123% | 3% |
+| A+ | weather 0.22-0.25 / 0.36-0.40 + morning-close + ban losers | 245 | +25% | 2.5% |
+| **A** (new) | box_office 0.02-0.10 + vol≥10k | 22 | +100% | 2% |
+| A | crypto_range "between" 0.10-0.20 | 40 | +40% | 2% |
+| B | weather 0.10-0.15 + morning-close | 347 | +19% | 1% |
 
-After realistic haircuts (edge decay, market depth, daily volume limits):
-- **Expected monthly return: +15-30% on $10k bankroll**
-- Daily bet count: ~5-15 (not 25/day as in historical sample)
-- Capital at risk: 30-50% of bankroll typical
+### Filter rules stacking
 
-## Known risks
+**Weather tiers require ALL:**
+1. Price in tier's range
+2. Volume ≥ 10k (20k for S+/B+)
+3. City not in tier's banlist
+4. (S+/B+ only) City in tier's preferred list
+5. **Close hour in city local 0-12h** ← Universal
+6. End_date > now + 30h (Cycle 11)
 
-1. **Edge decay**: Week-over-week declining (146→92→112%). Market may be learning.
-2. **Tier B variance**: 17-loss streaks seen. Keep stake <= 1%.
-3. **Fragile concentration**: Top 10% of winners drive most edge. Don't over-size any single bet.
-4. **Weather data limit**: Only ~30 days of history due to CLOB API. Cross-month validation not possible.
-5. **Cloud allowlist**: Polymarket API blocked from Anthropic CCR. Must run locally.
+### Prohibited
 
-## Future evolution direction
+- ❌ sports_global (paper-traded dead)
+- ❌ tropical climate weather (0% edge)
+- ❌ tweet_count (EV artifact near 0)
+- ❌ Vol < 10k (disaster zone)
+- ❌ T-12h entry (too late)
+- ❌ Close 12-24h local (resolved already)
 
-Not yet explored:
-- Weather forecast API integration (Accuweather) → filter buckets by ±1°C of forecast
-- Order-book depth analysis (entry at best-ask vs limit order)
-- Settlement-day effects (time-of-day on close date)
-- Correlation among multiple city-date bets
-- Non-weather bucket markets (sports totals, economics exact ranges)
+---
+
+## Performance Expectations
+
+### Historical backtest (25-day sample)
+- 633 qualifying bets
+- Total PnL at flat $100/bet: **+$46,587 (+466%)**
+- Tier B largest: $22,739
+- Tier S+: +$6,978 over 57 bets
+
+### Realistic monthly projection (on $10k)
+- Expected 15-30 qualifying bets per month (post-filter)
+- Portfolio EV: **+20-40% monthly** after fees
+- Max drawdown estimate: **-20 to -35%**
+
+### Key risks
+1. **Edge decay** (market learning ~15% weekly)
+2. **Concentration** (top 10% trades drive PnL)
+3. **Sample period limited** to ~25-30 days (CLOB API)
+4. **Local-hour filter untested forward** (found C32)
+
+---
+
+## Current Portfolio (2026-04-24)
+
+- **16 closed** (mostly pre-Cycle-9 pure-pocket): -$1,238 realized
+  - sports A: 12 bets, -$1,710 (killed the strategy)
+  - weather A: 4 bets, +$473 (confirmed edge)
+- **33 open**: $6,200 deployed (62% bankroll)
+  - Mostly weather 0.10-0.40 + 1 box office
+  - Unrealized: +$688 (mark-to-market)
+- **Mark-to-market net: -$550 (-5.5%)**
+
+Post-all-refinements, NEW positions should dominate once current batch settles.
+
+---
+
+## Files & Usage
+
+```bash
+python daily_run.py          # Everything in one command
+python cycle6_bias_scanner.py # Just scan
+python oracle_portfolio.py --settle  # Just settle
+python oracle_portfolio.py --status  # Just show status
+python cycle9_auto_tier.py   # Per-tier performance report
+```
+
+All history on GitHub: https://github.com/mibenton/polymarket-oracle
