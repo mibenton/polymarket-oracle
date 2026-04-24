@@ -50,9 +50,10 @@ BIAS_POCKETS = [
     ("weather_exact",   0.10, 0.15, "YES", 130.0, "B+", 63),
     # Tier B (low-prob, different city dynamics per C10)
     ("weather_exact",   0.10, 0.15, "YES", 19.0, "B",  347),
-    # Cycle 80: weather_exact extreme-tail 0-0.05 YES = +42% PnL (n=515)
-    # 3% win rate, 20x+ payouts. Very high variance tail arb.
-    ("weather_exact",   0.02, 0.05, "YES", 42.0, "C",  515),
+    # Cycle 82 refined: weather tail 0.02-0.05 + vol>=20k + morning close
+    # = +238% mean PnL, 13% win (n=103). Upgraded from C to A tier due to massive EV.
+    # Note: 87% loss rate but 20-30x payouts when winning. Keep stake small (high variance).
+    ("weather_exact",   0.02, 0.05, "YES", 150.0, "A",  103),
     # Cycle 80: weather_exact 0.30-0.35 narrow band = +46% (n=70, 47% win)
     ("weather_exact",   0.30, 0.35, "YES", 46.0, "A+", 70),
     # Cycle 42 refined: crypto "between X-Y" 0.10-0.15 is real sweet spot (n=26, +81%)
@@ -280,8 +281,12 @@ def match_market(m: dict, event_vol_max: dict | None = None) -> list[dict]:
         if rules.get("require_preferred") and not is_preferred:
             continue
         # S+ and B+ also require volume >=20k
+        # Cycle 82: weather_exact 0.02-0.05 tail pocket also requires vol>=20k
         if tier in ("S+", "B+") and float(m.get("volumeNum") or 0) < 20_000:
             continue
+        if pc_cat == "weather_exact" and lo == 0.02 and hi == 0.05:
+            if float(m.get("volumeNum") or 0) < 20_000:
+                continue
         # Cycle 32: reject markets closing in city local afternoon/evening (12-24h)
         # Applies to ALL weather tiers (universal edge uplift)
         local_h = local_close_hour(m.get("endDate"), city) if city else -1
