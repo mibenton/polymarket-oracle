@@ -181,7 +181,9 @@ def is_good_close_hour(hour: int) -> bool:
     return 0 <= hour < 12  # before local noon only
 
 
-# Cycle 10: per-pocket banlist + Cycle 21 preferred list
+# Cycles 10, 21, 40: per-pocket banlist + preferred cities
+# Cycle 40: cities with 100% positive-week consistency get extra weight
+ULTRA_PREFERRED = ["san-francisco","paris","madrid","lucknow","tel-aviv","sao-paulo"]
 PER_POCKET_RULES = {
     # S+ = strictest filter = ONLY cities from C21 +122% mean PnL sample
     "S+": {
@@ -216,7 +218,15 @@ PER_POCKET_RULES = {
 }
 
 
-def match_market(m: dict) -> list[dict]:
+def event_key_for_scan(slug: str) -> str:
+    """Strip trailing temp/range to group buckets of same event (city-date)."""
+    s = re.sub(r'-[0-9]+(pt[0-9]+)?(c|f)?(orhigher|orabove|orbelow|orlower)?$',
+               '', (slug or '').lower())
+    s = re.sub(r'-[0-9]+(-[0-9]+)?(f|c)?$', '', s)
+    return s
+
+
+def match_market(m: dict, event_vol_max: dict | None = None) -> list[dict]:
     import re as _re
     try:
         outcomes = json.loads(m.get("outcomes") or "[]")
@@ -264,11 +274,28 @@ def match_market(m: dict) -> list[dict]:
         if pc_cat == "weather_exact" and not is_good_close_hour(local_h):
             continue
 
+        # Cycle 41: volume ratio within event (S+/B+ boost if vol >= 60% of event max)
+        vol_ratio = 1.0
+        if event_vol_max is not None and pc_cat == "weather_exact":
+            evt = event_key_for_scan(m.get("slug") or "")
+            max_v = event_vol_max.get(evt, 0)
+            my_v = float(m.get("volumeNum") or 0)
+            if max_v > 0:
+                vol_ratio = my_v / max_v
+        # S++ / B++ pseudo-tiers: same as S+/B+ but vol_ratio >= 0.6
+        tier_label = tier
+        if tier == "S+" and vol_ratio >= 0.6:
+            tier_label = "S++"
+        elif tier == "B+" and vol_ratio >= 0.6:
+            tier_label = "B++"
+
         # You want to bet best_side. Entry is ask of that side
         if best_side == "YES":
             entry = ask
         else:
             entry = 1 - bid  # NO ask ≈ 1 - YES bid
+        # ev uplift if tier upgraded to ++
+        ev_final = ev_pct * 1.5 if tier_label.endswith("++") else ev_pct
         results.append({
             "city": city,
             "preferred_city": is_preferred,
@@ -276,8 +303,9 @@ def match_market(m: dict) -> list[dict]:
             "pocket": f"{lo:.2f}-{hi:.2f}",
             "best_side": best_side,
             "entry_price": round(entry, 4),
-            "expected_ev_pct": ev_pct,
-            "tier": tier,
+            "expected_ev_pct": ev_final,
+            "tier": tier_label,
+            "vol_ratio": round(vol_ratio, 2),
             "historical_n": src_n,
             "slug": m.get("slug"),
             "question": (m.get("question") or "")[:90],
@@ -301,9 +329,19 @@ def main():
     raw = fetch_open_markets()
     print(f"Fetched {len(raw)} open markets")
 
+    # Cycle 41: compute event_vol_max for vol_ratio filter
+    event_vol_max = {}
+    for m in raw:
+        slug = m.get("slug") or ""
+        if "temperature-in-" in slug.lower():
+            evt = event_key_for_scan(slug)
+            v = float(m.get("volumeNum") or 0)
+            if v > event_vol_max.get(evt, 0):
+                event_vol_max[evt] = v
+
     hits = []
     for m in raw:
-        hits.extend(match_market(m))
+        hits.extend(match_market(m, event_vol_max))
 
     if not hits:
         print("No current matches.")
