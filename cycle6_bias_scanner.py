@@ -64,10 +64,11 @@ BIAS_POCKETS = [
     # Cycle 76: Soccer O/U totals 0.50-0.60 YES → +30% mean, 70% win (n=44)
     # +46% with vol>100k (n=10)
     ("soccer_total",    0.50, 0.60, "YES", 30.0, "A",  44),
-    # Cycle 88: Sports match 0.60-0.80 YES → BUY NO has +12% edge (n=187)
-    # Cycle 91: vol>100k sports NO = +40% (n=69) — high-volume liquid markets strongest
-    # Heavy favorites are over-priced in sports_global (football/tennis/UFC etc)
-    ("sports_global",   0.60, 0.80, "NO",  12.0, "B", 187),
+    # Cycle 88/91/101: Sports match 0.60-0.80 YES → BUY NO has +12% edge (n=187)
+    # Cycle 101: 0.65-0.70 + vol>=100k = +49% (n=20) — volume upgrades
+    # Split into sub-pockets:
+    ("sports_global",   0.65, 0.80, "NO",  22.0, "A",  85),   # tighter narrow + higher price
+    ("sports_global",   0.60, 0.65, "NO",  10.0, "B", 67),    # wider low-band
     # Cycle 93: Non-weather non-crypto 0.60-0.70 → NO has +12.6% edge (n=431 broad)
     # Universal "heavy favorite" over-pricing
     ("sports_us",       0.60, 0.80, "NO",  12.0, "B", 100),

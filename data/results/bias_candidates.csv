@@ -2,30 +2,30 @@ city,preferred_city,category,pocket,best_side,entry_price,expected_ev_pct,tier,v
 ,False,box_office,0.03-0.10,YES,0.09,100.0,C,1.0,22,will-dune-3-or-avengers-doomsday-gross-more-on-their-opening-weekend-825,Will Dune 3 or Avengers: Doomsday gross more on their opening weekend?,0.079,0.022,37640,2026-12-20T00:00:00Z
 ,False,box_office,0.03-0.10,YES,0.037,100.0,C,1.0,22,will-toy-story-5-have-the-best-domestic-opening-weekend-in-2026,Will Toy Story 5 have the best domestic opening weekend in 2026?,0.035,0.004,179953,2026-12-31T00:00:00Z
 ,False,box_office,0.03-0.10,YES,0.051,100.0,C,1.0,22,will-the-devil-wears-prada-2-opening-weekend-box-office-be-less-than-70m,"Will ""The Devil Wears Prada 2"" Opening Weekend Box Office be less than 70m?",0.0465,0.009,14928,2026-05-04T12:00:00Z
-,False,sports_global,0.60-0.80,NO,0.23,12.0,B,1.0,187,epl-mac-cry-2026-03-21-mac,Will Manchester City FC win on 2026-03-21?,0.775,0.01,71909,2026-03-21T15:00:00Z
-,False,sports_us,0.60-0.80,NO,0.22,12.0,B,1.0,100,nba-okc-phx-2026-04-25,Thunder vs. Suns,0.785,0.01,78748,2026-04-25T19:30:00Z
-,False,sports_global,0.60-0.80,NO,0.34,12.0,B,1.0,187,bun-lei-uni-2026-04-24-lei,Will RB Leipzig win on 2026-04-24?,0.665,0.01,96373,2026-04-24T18:30:00Z
-,False,sports_us,0.60-0.80,NO,0.35,12.0,B,1.0,100,will-the-oklahoma-city-thunder-win-the-nba-western-conference-finals,Will the Oklahoma City Thunder win the NBA Western Conference Finals?,0.655,0.01,639300,2026-06-16T00:00:00Z
+,False,sports_global,0.65-0.80,NO,0.34,22.0,A,1.0,85,epl-ars-new-2026-04-25-ars,Will Arsenal FC win on 2026-04-25?,0.665,0.01,27268,2026-04-25T16:30:00Z
+,False,sports_global,0.65-0.80,NO,0.35,22.0,A,1.0,85,will-khamzat-chimaev-be-the-ufc-middleweight-champion-on-december-31-2026,"Will Khamzat Chimaev be the UFC Middleweight Champion on December 31, 2026?",0.675,0.05,36412,2026-12-31T00:00:00Z
+,False,sports_global,0.65-0.80,NO,0.34,22.0,A,1.0,85,bun-lei-uni-2026-04-24-lei,Will RB Leipzig win on 2026-04-24?,0.665,0.01,96373,2026-04-24T18:30:00Z
+,False,sports_global,0.65-0.80,NO,0.27,22.0,A,1.0,85,wta-cirstea-grant-2026-04-24,Madrid Open: Sorana Cirstea vs Tyra Caterina Grant,0.735,0.01,179835,2026-05-01T09:00:00Z
+,False,sports_global,0.65-0.80,NO,0.28,22.0,A,1.0,85,wta-sonmez-bucsa-2026-04-24,Madrid Open: Zeynep Sonmez vs Cristina Bucsa,0.725,0.01,150561,2026-05-01T09:00:00Z
+,False,sports_global,0.65-0.80,NO,0.23,22.0,A,1.0,85,atp-fonseca-cilic-2026-04-24,Madrid Open: Joao Fonseca vs Marin Cilic,0.775,0.01,10540,2026-05-01T09:00:00Z
+,False,sports_global,0.65-0.80,NO,0.29,22.0,A,1.0,85,ucl-psg1-bay1-2026-04-28-btts,Paris Saint-Germain FC vs. FC Bayern München: Both Teams to Score,0.72,0.02,10642,2026-04-28T19:00:00Z
+,False,sports_global,0.65-0.80,NO,0.32,22.0,A,1.0,85,atp-shelton-prizmic-2026-04-24,Madrid Open: Ben Shelton vs Dino Prizmic,0.685,0.01,210851,2026-05-01T09:00:00Z
+,False,sports_global,0.65-0.80,NO,0.33,22.0,A,1.0,85,epl-liv-cry-2026-04-25-liv,Will Liverpool FC win on 2026-04-25?,0.675,0.01,15083,2026-04-25T14:00:00Z
+,False,sports_global,0.65-0.80,NO,0.23,22.0,A,1.0,85,epl-mac-cry-2026-03-21-mac,Will Manchester City FC win on 2026-03-21?,0.775,0.01,71909,2026-03-21T15:00:00Z
 ,False,sports_us,0.60-0.80,NO,0.26,12.0,B,1.0,100,nhl-playoffs-who-will-win-series-sabres-vs-bruins,NHL Playoffs: Who Will Win Series? - Sabres vs. Bruins ,0.75,0.02,60251,2026-05-04T00:00:00Z
-,False,sports_global,0.60-0.80,NO,0.39,12.0,B,1.0,187,fl1-sbr-rcl-2026-04-24-rcl,Will Racing Club de Lens win on 2026-04-24?,0.615,0.01,50052,2026-04-24T18:45:00Z
-,False,sports_global,0.60-0.80,NO,0.374,12.0,B,1.0,187,will-aston-villa-finish-in-the-top-4-of-the-epl-202526-standings,Will Aston Villa finish in the top 4 of the EPL 2025–26 standings?,0.631,0.01,421658,2026-05-27T00:00:00Z
-,False,sports_global,0.60-0.80,NO,0.35,12.0,B,1.0,187,will-khamzat-chimaev-be-the-ufc-middleweight-champion-on-december-31-2026,"Will Khamzat Chimaev be the UFC Middleweight Champion on December 31, 2026?",0.675,0.05,36412,2026-12-31T00:00:00Z
-,False,sports_global,0.60-0.80,NO,0.47,12.0,B,1.0,187,epl-mac-cry-2026-03-21-total-2pt5,Manchester City FC vs. Crystal Palace FC: O/U 2.5,0.64,0.22,35294,2026-03-21T15:00:00Z
-,False,sports_global,0.60-0.80,NO,0.39,12.0,B,1.0,187,will-kylian-mbappe-be-the-20252026-top-ucl-goal-scorer,Will Kylian Mbappe be the 2025/2026 top UCL goal scorer?,0.625,0.03,66738,2026-05-30T00:00:00Z
-,False,sports_us,0.60-0.80,NO,0.336,12.0,B,1.0,100,will-cooper-flagg-win-the-202526-nba-rookie-of-the-year-award,Will Cooper Flagg win the 2025–26 NBA Rookie of the Year award?,0.6765,0.025,853049,2026-05-18T00:00:00Z
-,False,sports_global,0.60-0.80,NO,0.32,12.0,B,1.0,187,atp-shelton-prizmic-2026-04-24,Madrid Open: Ben Shelton vs Dino Prizmic,0.685,0.01,210851,2026-05-01T09:00:00Z
-,False,sports_global,0.60-0.80,NO,0.34,12.0,B,1.0,187,epl-ars-new-2026-04-25-ars,Will Arsenal FC win on 2026-04-25?,0.665,0.01,27268,2026-04-25T16:30:00Z
-,False,sports_us,0.60-0.80,NO,0.31,12.0,B,1.0,100,will-detroit-pistons-advance-to-the-conference-semifinals-in-the-2026-nba-playoffs,Will Detroit Pistons advance to the Conference Semifinals in the 2026 NBA Playoffs?,0.705,0.03,19224,2026-05-03T00:00:00Z
-,False,sports_us,0.60-0.80,NO,0.41,12.0,B,1.0,100,nba-sas-por-2026-04-26,Spurs vs. Trail Blazers,0.61,0.04,19942,2026-04-26T19:30:00Z
-,False,sports_us,0.60-0.80,NO,0.214,12.0,B,1.0,100,will-san-antonio-spurs-advance-to-the-conference-semifinals-in-the-2026-nba-playoffs,Will San Antonio Spurs advance to the Conference Semifinals in the 2026 NBA Playoffs?,0.7925,0.013,191986,2026-05-03T00:00:00Z
-,False,sports_global,0.60-0.80,NO,0.38,12.0,B,1.0,187,bun-dor-fre-2026-04-26-total-2pt5,BV Borussia 09 Dortmund vs. SC Freiburg: O/U 2.5,0.625,0.01,18435,2026-04-26T15:30:00Z
-,False,sports_global,0.60-0.80,NO,0.27,12.0,B,1.0,187,wta-cirstea-grant-2026-04-24,Madrid Open: Sorana Cirstea vs Tyra Caterina Grant,0.735,0.01,179835,2026-05-01T09:00:00Z
-,False,sports_us,0.60-0.80,NO,0.28,12.0,B,1.0,100,nba-bos-phi-2026-04-24,Celtics vs. 76ers,0.725,0.01,196618,2026-04-24T23:00:00Z
-,False,sports_global,0.60-0.80,NO,0.33,12.0,B,1.0,187,epl-liv-cry-2026-04-25-liv,Will Liverpool FC win on 2026-04-25?,0.675,0.01,15083,2026-04-25T14:00:00Z
-,False,sports_global,0.60-0.80,NO,0.28,12.0,B,1.0,187,wta-sonmez-bucsa-2026-04-24,Madrid Open: Zeynep Sonmez vs Cristina Bucsa,0.725,0.01,150561,2026-05-01T09:00:00Z
-,False,sports_global,0.60-0.80,NO,0.36,12.0,B,1.0,187,fl1-olm-ogc-2026-04-26-olm,Will Olympique de Marseille win on 2026-04-26?,0.645,0.01,14633,2026-04-26T18:45:00Z
-,False,sports_us,0.60-0.80,NO,0.28,12.0,B,1.0,100,nba-playoffs-who-will-win-series-pistons-vs-magic,NBA Playoffs: Who Will Win Series? - Pistons vs. Magic ,0.725,0.01,132979,2026-05-04T00:00:00Z
 ,False,sports_us,0.60-0.80,NO,0.31,12.0,B,1.0,100,will-buffalo-sabres-advance-to-round-2-of-the-2026-nhl-playoffs,Will Buffalo Sabres advance to Round 2 of the 2026 NHL Playoffs?,0.73,0.08,12515,2026-05-05T00:00:00Z
-,False,sports_global,0.60-0.80,NO,0.29,12.0,B,1.0,187,ucl-psg1-bay1-2026-04-28-btts,Paris Saint-Germain FC vs. FC Bayern München: Both Teams to Score,0.72,0.02,10642,2026-04-28T19:00:00Z
-,False,sports_global,0.60-0.80,NO,0.23,12.0,B,1.0,187,atp-fonseca-cilic-2026-04-24,Madrid Open: Joao Fonseca vs Marin Cilic,0.775,0.01,10540,2026-05-01T09:00:00Z
+,False,sports_us,0.60-0.80,NO,0.28,12.0,B,1.0,100,nba-bos-phi-2026-04-24,Celtics vs. 76ers,0.725,0.01,196618,2026-04-24T23:00:00Z
+,False,sports_us,0.60-0.80,NO,0.31,12.0,B,1.0,100,will-detroit-pistons-advance-to-the-conference-semifinals-in-the-2026-nba-playoffs,Will Detroit Pistons advance to the Conference Semifinals in the 2026 NBA Playoffs?,0.705,0.03,19224,2026-05-03T00:00:00Z
+,False,sports_us,0.60-0.80,NO,0.214,12.0,B,1.0,100,will-san-antonio-spurs-advance-to-the-conference-semifinals-in-the-2026-nba-playoffs,Will San Antonio Spurs advance to the Conference Semifinals in the 2026 NBA Playoffs?,0.7925,0.013,191986,2026-05-03T00:00:00Z
+,False,sports_us,0.60-0.80,NO,0.336,12.0,B,1.0,100,will-cooper-flagg-win-the-202526-nba-rookie-of-the-year-award,Will Cooper Flagg win the 2025–26 NBA Rookie of the Year award?,0.6765,0.025,853049,2026-05-18T00:00:00Z
+,False,sports_us,0.60-0.80,NO,0.22,12.0,B,1.0,100,nba-okc-phx-2026-04-25,Thunder vs. Suns,0.785,0.01,78748,2026-04-25T19:30:00Z
+,False,sports_us,0.60-0.80,NO,0.35,12.0,B,1.0,100,will-the-oklahoma-city-thunder-win-the-nba-western-conference-finals,Will the Oklahoma City Thunder win the NBA Western Conference Finals?,0.655,0.01,639300,2026-06-16T00:00:00Z
+,False,sports_us,0.60-0.80,NO,0.41,12.0,B,1.0,100,nba-sas-por-2026-04-26,Spurs vs. Trail Blazers,0.61,0.04,19942,2026-04-26T19:30:00Z
 ,False,sports_us,0.60-0.80,NO,0.41,12.0,B,1.0,100,will-tampa-bay-lightning-advance-to-round-2-of-the-2026-nhl-playoffs,Will Tampa Bay Lightning advance to Round 2 of the 2026 NHL Playoffs?,0.615,0.05,10530,2026-05-05T00:00:00Z
+,False,sports_us,0.60-0.80,NO,0.28,12.0,B,1.0,100,nba-playoffs-who-will-win-series-pistons-vs-magic,NBA Playoffs: Who Will Win Series? - Pistons vs. Magic ,0.725,0.01,132979,2026-05-04T00:00:00Z
+,False,sports_global,0.60-0.65,NO,0.39,10.0,B,1.0,67,fl1-sbr-rcl-2026-04-24-rcl,Will Racing Club de Lens win on 2026-04-24?,0.615,0.01,50052,2026-04-24T18:45:00Z
+,False,sports_global,0.60-0.65,NO,0.39,10.0,B,1.0,67,will-kylian-mbappe-be-the-20252026-top-ucl-goal-scorer,Will Kylian Mbappe be the 2025/2026 top UCL goal scorer?,0.625,0.03,66738,2026-05-30T00:00:00Z
+,False,sports_global,0.60-0.65,NO,0.47,10.0,B,1.0,67,epl-mac-cry-2026-03-21-total-2pt5,Manchester City FC vs. Crystal Palace FC: O/U 2.5,0.64,0.22,35294,2026-03-21T15:00:00Z
+,False,sports_global,0.60-0.65,NO,0.374,10.0,B,1.0,67,will-aston-villa-finish-in-the-top-4-of-the-epl-202526-standings,Will Aston Villa finish in the top 4 of the EPL 2025–26 standings?,0.631,0.01,421658,2026-05-27T00:00:00Z
+,False,sports_global,0.60-0.65,NO,0.38,10.0,B,1.0,67,bun-dor-fre-2026-04-26-total-2pt5,BV Borussia 09 Dortmund vs. SC Freiburg: O/U 2.5,0.625,0.01,18435,2026-04-26T15:30:00Z
+,False,sports_global,0.60-0.65,NO,0.36,10.0,B,1.0,67,fl1-olm-ogc-2026-04-26-olm,Will Olympique de Marseille win on 2026-04-26?,0.645,0.01,14633,2026-04-26T18:45:00Z
