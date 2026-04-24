@@ -52,6 +52,8 @@ BIAS_POCKETS = [
     ("weather_exact",   0.10, 0.15, "YES", 19.0, "B",  347),
     # Cycle 17: crypto "between X-Y" range markets
     ("crypto_range",    0.10, 0.20, "YES", 40.0, "A",   40),
+    # Cycle 34: Box office low-price tail (n=22) +224%. High-variance but huge payoffs.
+    ("box_office",      0.02, 0.10, "YES", 100.0, "A",  22),
     # === STRATEGIES BELOW ARE NOW EXCLUDED ===
     # Disabled after paper-trade failure 4/22-4/24:
     # Sports (12 bets, 17% win vs expected 55%, -$1710 PnL)
@@ -81,11 +83,13 @@ def categorize(slug):
     if any(k in s for k in ["tweets", "tweet-", "-of-posts-", "-of-tweets-"]):
         return "tweet_count"
     # Cycle 17: crypto "between X-Y" range markets at 0.10-0.20 price → +61% EV (n=40)
-    # Strict: must contain "between" (excludes "reach"/"dip to" threshold markets)
     has_crypto = any(k in s for k in ["bitcoin", "btc-", "ethereum", "eth-",
                                        "solana", "sol-"])
     if has_crypto and "between" in s:
         return "crypto_range"
+    # Cycle 34: box office opening/ 2nd/3rd weekend markets → low price bucket +224% (n=22)
+    if "box-office" in s or "opening-weekend" in s:
+        return "box_office"
     # Weather: exact-bucket only (not cumulative). Cycle 9 segmentation found:
     # - Tropical climate: edge ~0 → EXCLUDE
     # - East-Asian capitals (Beijing/Taipei/Shanghai/Seoul/Singapore): negative → EXCLUDE
