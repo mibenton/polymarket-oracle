@@ -8,6 +8,7 @@ Unlike Oracle scanner which relies on Claude judgment, this scanner:
 No Claude subjective step. Pure statistics.
 """
 import json
+import re
 import time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -36,17 +37,19 @@ HEADERS = {
 # Tier C = deep-dive confirmed but small sample
 BIAS_POCKETS = [
     # (category_key, price_lo, price_hi, best_side, expected_ev_pct, tier, source_n)
-    # Cycle 9 refined: split 0.20-0.40 into sweet spots (0.30-0.36 = +68% EV sample)
-    # and weaker subset (0.22-0.30 = +17% EV). Excludes banned East-Asian cities.
+    # Cycle 12 refined: vol 20-100k is where edge concentrates
+    # Best sub-cell: vol 50-100k x price 0.25-0.30 = +93% (n=24)
+    # Second: vol 20-50k x price 0.25-0.36 = +65%
     #
-    # Tier S (sweet spot, Cycle 9 n=22 sample +69% PnL)
-    ("weather_exact",   0.30, 0.36, "YES", 50.0, "S",  108),  # 0.30-0.36 combined
-    # Tier A+ (adjacent, still very strong)
-    ("weather_exact",   0.22, 0.30, "YES", 20.0, "A+", 476),
-    # Tier A (main bucket, Cycle 8 proven)
-    ("weather_exact",   0.36, 0.40, "YES", 15.0, "A",  52),
-    # Tier B (low-prob, smaller edge but n=347)
+    # Tier S (new sweet spot from C12: price 0.25-0.36 combined)
+    ("weather_exact",   0.25, 0.36, "YES", 55.0, "S",  221),
+    # Tier A+ (wider price band, still positive when vol>=20k)
+    ("weather_exact",   0.22, 0.25, "YES", 25.0, "A+", 170),
+    ("weather_exact",   0.36, 0.40, "YES", 20.0, "A+", 75),
+    # Tier B (low-prob, different city dynamics per C10)
     ("weather_exact",   0.10, 0.15, "YES", 19.0, "B",  347),
+    # Cycle 17: crypto "between X-Y" range markets
+    ("crypto_range",    0.10, 0.20, "YES", 40.0, "A",   40),
     # === STRATEGIES BELOW ARE NOW EXCLUDED ===
     # Disabled after paper-trade failure 4/22-4/24:
     # Sports (12 bets, 17% win vs expected 55%, -$1710 PnL)
@@ -75,6 +78,12 @@ def categorize(slug):
         return "esports"
     if any(k in s for k in ["tweets", "tweet-", "-of-posts-", "-of-tweets-"]):
         return "tweet_count"
+    # Cycle 17: crypto "between X-Y" range markets at 0.10-0.20 price → +61% EV (n=40)
+    # Strict: must contain "between" (excludes "reach"/"dip to" threshold markets)
+    has_crypto = any(k in s for k in ["bitcoin", "btc-", "ethereum", "eth-",
+                                       "solana", "sol-"])
+    if has_crypto and "between" in s:
+        return "crypto_range"
     # Weather: exact-bucket only (not cumulative). Cycle 9 segmentation found:
     # - Tropical climate: edge ~0 → EXCLUDE
     # - East-Asian capitals (Beijing/Taipei/Shanghai/Seoul/Singapore): negative → EXCLUDE
@@ -97,7 +106,7 @@ def fetch_open_markets(limit_pages: int = 20) -> list[dict]:
             r = requests.get(GAMMA, params={
                 "closed": "false", "active": "true",
                 "limit": 500, "offset": offset,
-                "volume_num_min": 10000,  # Cycle 9: vol<20k PnL ~0, min 10k as soft floor
+                "volume_num_min": 10000,  # C12 confirmed: vol 5-10k = -62% PnL (disaster)
                 "order": "volume", "ascending": "false",
             }, headers=HEADERS, timeout=30)
             if r.status_code != 200:
@@ -115,7 +124,35 @@ def fetch_open_markets(limit_pages: int = 20) -> list[dict]:
     return out
 
 
+def extract_city(slug: str) -> str:
+    m = re.match(r'highest-temperature-in-([a-z-]+?)-on-', (slug or '').lower())
+    if not m:
+        return ""
+    return m.group(1).rstrip("-")
+
+
+# Cycle 10: per-pocket banlist (derived from cycle10_per_pocket_banlist.py)
+PER_POCKET_RULES = {
+    "S":  {"banned": [], "preferred": ["london"]},
+    "A+": {
+        "banned": ["atlanta","ankara","london","amsterdam","hong-kong","warsaw","beijing",
+                   "taipei","seoul","singapore","shanghai"],
+        "preferred": ["dallas","austin","moscow","madrid","wellington","miami","tel-aviv",
+                      "milan","los-angeles","lucknow","san-francisco","denver","wuhan",
+                      "toronto","nyc","chongqing"],
+    },
+    "A":  {"banned": [], "preferred": []},
+    "B":  {
+        "banned": ["miami","shenzhen","madrid","seoul","moscow","buenos-aires","atlanta",
+                   "london"],
+        "preferred": ["beijing","taipei","dallas","milan","wellington","nyc","chicago",
+                      "shanghai","paris"],
+    },
+}
+
+
 def match_market(m: dict) -> list[dict]:
+    import re as _re
     try:
         outcomes = json.loads(m.get("outcomes") or "[]")
         tokens = json.loads(m.get("clobTokenIds") or "[]")
@@ -134,6 +171,9 @@ def match_market(m: dict) -> list[dict]:
     mid = (ask + bid) / 2
 
     cat = categorize(m.get("slug"))
+    slug = m.get("slug") or ""
+    city = extract_city(slug)
+
     results = []
     for pocket in BIAS_POCKETS:
         pc_cat, lo, hi, best_side, ev_pct, tier, src_n = pocket
@@ -142,12 +182,20 @@ def match_market(m: dict) -> list[dict]:
         if not (lo <= mid < hi):
             continue
 
+        # Per-pocket banlist (Cycle 10)
+        rules = PER_POCKET_RULES.get(tier, {})
+        if city and city in rules.get("banned", []):
+            continue
+        is_preferred = bool(city and city in rules.get("preferred", []))
+
         # You want to bet best_side. Entry is ask of that side
         if best_side == "YES":
             entry = ask
         else:
             entry = 1 - bid  # NO ask ≈ 1 - YES bid
         results.append({
+            "city": city,
+            "preferred_city": is_preferred,
             "category": cat,
             "pocket": f"{lo:.2f}-{hi:.2f}",
             "best_side": best_side,

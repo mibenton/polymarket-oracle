@@ -18,8 +18,11 @@ CANDIDATES = Path("data/results/bias_candidates.csv")
 DEC_FILE = Path("data/oracle_decisions.jsonl")
 MAX_NEW_POSITIONS = 25
 MAX_DAYS_TO_CLOSE = 30
-# stake sizing per tier (Cycle 9: Tier S = sweet spot)
-STAKE_PCT = {"S": 0.03, "A+": 0.02, "A": 0.015, "B": 0.01, "C": 0.005}
+# Stake sizing per tier (Cycle 19 Kelly analysis)
+# S sweet spot: full 1/4 Kelly ≈ 3%
+# A: 1/4 Kelly says 3.1% for high-price end, 1% for low-price end. Pick middle 2.5%
+# B: 1/4 Kelly ≈ 1%
+STAKE_PCT = {"S": 0.03, "A+": 0.025, "A": 0.02, "B": 0.01, "C": 0.005}
 
 
 def main():
@@ -46,8 +49,10 @@ def main():
             return None
     df["end_dt"] = df["end_date"].apply(parse_end)
     df = df[df["end_dt"].notna()]
-    df = df[(df["end_dt"] > now + timedelta(hours=12)) & (df["end_dt"] <= cutoff)]
-    print(f"In future (12h-30d window): {len(df)}")
+    # Cycle 11 finding: T-12h entry is disastrous (-15 to -50% PnL)
+    # Optimal is T-48 to T-72h. Raise minimum to 30h to be safely past T-24 risk zone.
+    df = df[(df["end_dt"] > now + timedelta(hours=30)) & (df["end_dt"] <= cutoff)]
+    print(f"In future (30h-30d window): {len(df)}")
 
     # Dedupe by slug (same market can appear twice from PSG O/U etc)
     df = df.drop_duplicates(subset=["slug"]).copy()

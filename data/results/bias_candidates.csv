@@ -1,2 +1,2 @@
-category,pocket,best_side,entry_price,expected_ev_pct,tier,historical_n,slug,question,mid,spread,volume,end_date
-weather_exact,0.30-0.36,YES,0.33,50.0,S,108,highest-temperature-in-london-on-april-24-2026-17c,Will the highest temperature in London be 17°C on April 24?,0.32,0.02,12668,2026-04-24T12:00:00Z
+city,preferred_city,category,pocket,best_side,entry_price,expected_ev_pct,tier,historical_n,slug,question,mid,spread,volume,end_date
+london,True,weather_exact,0.25-0.36,YES,0.33,55.0,S,221,highest-temperature-in-london-on-april-24-2026-17c,Will the highest temperature in London be 17°C on April 24?,0.32,0.02,12740,2026-04-24T12:00:00Z
