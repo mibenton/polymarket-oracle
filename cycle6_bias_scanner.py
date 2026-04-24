@@ -65,8 +65,12 @@ BIAS_POCKETS = [
     # +46% with vol>100k (n=10)
     ("soccer_total",    0.50, 0.60, "YES", 30.0, "A",  44),
     # Cycle 88: Sports match 0.60-0.80 YES → BUY NO has +12% edge (n=187)
+    # Cycle 91: vol>100k sports NO = +40% (n=69) — high-volume liquid markets strongest
     # Heavy favorites are over-priced in sports_global (football/tennis/UFC etc)
     ("sports_global",   0.60, 0.80, "NO",  12.0, "B", 187),
+    # Cycle 93: Non-weather non-crypto 0.60-0.70 → NO has +12.6% edge (n=431 broad)
+    # Universal "heavy favorite" over-pricing
+    ("sports_us",       0.60, 0.80, "NO",  12.0, "B", 100),
     # === STRATEGIES BELOW ARE NOW EXCLUDED ===
     # Disabled after paper-trade failure 4/22-4/24:
     # Sports (12 bets, 17% win vs expected 55%, -$1710 PnL)
