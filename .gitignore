@@ -23,10 +23,6 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Claude Code local settings
-.claude/
-CLAUDE.md
-
 # Local secrets (NEVER commit PAT)
 .env
 *.token
