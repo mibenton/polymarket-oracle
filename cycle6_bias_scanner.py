@@ -36,10 +36,16 @@ HEADERS = {
 # Tier C = deep-dive confirmed but small sample
 BIAS_POCKETS = [
     # (category_key, price_lo, price_hi, best_side, expected_ev_pct, tier, source_n)
-    # Tier A+ (large sample, confirmed in paper trade 4/22-4/24, +$1178 on 16 bets)
-    ("weather_exact",   0.20, 0.40, "YES", 28.5, "A+", 706),
-    # Tier B (Cycle 8 bucket-detector finding; mechanism same as A+ but lower prob bucket)
-    # n=347, bias +2.6pp, net EV +19%, forward test pending
+    # Cycle 9 refined: split 0.20-0.40 into sweet spots (0.30-0.36 = +68% EV sample)
+    # and weaker subset (0.22-0.30 = +17% EV). Excludes banned East-Asian cities.
+    #
+    # Tier S (sweet spot, Cycle 9 n=22 sample +69% PnL)
+    ("weather_exact",   0.30, 0.36, "YES", 50.0, "S",  108),  # 0.30-0.36 combined
+    # Tier A+ (adjacent, still very strong)
+    ("weather_exact",   0.22, 0.30, "YES", 20.0, "A+", 476),
+    # Tier A (main bucket, Cycle 8 proven)
+    ("weather_exact",   0.36, 0.40, "YES", 15.0, "A",  52),
+    # Tier B (low-prob, smaller edge but n=347)
     ("weather_exact",   0.10, 0.15, "YES", 19.0, "B",  347),
     # === STRATEGIES BELOW ARE NOW EXCLUDED ===
     # Disabled after paper-trade failure 4/22-4/24:
@@ -69,10 +75,17 @@ def categorize(slug):
         return "esports"
     if any(k in s for k in ["tweets", "tweet-", "-of-posts-", "-of-tweets-"]):
         return "tweet_count"
-    # Weather: only "exact bucket" markets have confirmed edge (n=416, EV +28%)
-    # Cumulative ("or higher" / "or below") are excluded — negative EV in history
+    # Weather: exact-bucket only (not cumulative). Cycle 9 segmentation found:
+    # - Tropical climate: edge ~0 → EXCLUDE
+    # - East-Asian capitals (Beijing/Taipei/Shanghai/Seoul/Singapore): negative → EXCLUDE
     if ("highest-temperature" in s or "temperature-in-" in s) and \
        not any(k in s for k in ["orhigher", "orabove", "orbelow", "orlower"]):
+        # Cycle 9 banned cities (n>=15, mean PnL < -10%)
+        banned_cities = ["beijing", "taipei", "shanghai", "seoul", "singapore",
+                         "jakarta", "bangkok", "manila", "ho-chi-minh",
+                         "kuala-lumpur", "hong-kong", "warsaw", "ankara"]
+        if any(f"temperature-in-{c}-" in s for c in banned_cities):
+            return "weather_banned"
         return "weather_exact"
     return "other"
 
@@ -84,7 +97,7 @@ def fetch_open_markets(limit_pages: int = 20) -> list[dict]:
             r = requests.get(GAMMA, params={
                 "closed": "false", "active": "true",
                 "limit": 500, "offset": offset,
-                "volume_num_min": 2000,
+                "volume_num_min": 10000,  # Cycle 9: vol<20k PnL ~0, min 10k as soft floor
                 "order": "volume", "ascending": "false",
             }, headers=HEADERS, timeout=30)
             if r.status_code != 200:

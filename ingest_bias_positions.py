@@ -18,8 +18,8 @@ CANDIDATES = Path("data/results/bias_candidates.csv")
 DEC_FILE = Path("data/oracle_decisions.jsonl")
 MAX_NEW_POSITIONS = 25
 MAX_DAYS_TO_CLOSE = 30
-# stake sizing per tier
-STAKE_PCT = {"A+": 0.02, "A": 0.02, "B": 0.01, "C": 0.005}
+# stake sizing per tier (Cycle 9: Tier S = sweet spot)
+STAKE_PCT = {"S": 0.03, "A+": 0.02, "A": 0.015, "B": 0.01, "C": 0.005}
 
 
 def main():
@@ -29,9 +29,9 @@ def main():
     df = pd.read_csv(CANDIDATES)
     print(f"Raw candidates: {len(df)}")
 
-    # Tier A+, A, or B
-    df = df[df["tier"].isin(["A+", "A", "B"])].copy()
-    print(f"Tier A+/A/B: {len(df)}")
+    # Accept tiers S, A+, A, B
+    df = df[df["tier"].isin(["S", "A+", "A", "B"])].copy()
+    print(f"Tier S/A+/A/B: {len(df)}")
     if df.empty:
         print("No candidates.")
         return
@@ -53,7 +53,7 @@ def main():
     df = df.drop_duplicates(subset=["slug"]).copy()
 
     # Rank: prefer higher volume × tier priority × not-too-soon
-    tier_prio = {"A+": 4, "A": 3, "B": 2, "C": 1}
+    tier_prio = {"S": 5, "A+": 4, "A": 3, "B": 2, "C": 1}
     df["tier_prio"] = df["tier"].map(tier_prio).fillna(0)
     df["hours_to_close"] = (df["end_dt"] - now).dt.total_seconds() / 3600
     # Rank: high-volume + higher-tier + at least 6h away (avoid near-expiry slippage)

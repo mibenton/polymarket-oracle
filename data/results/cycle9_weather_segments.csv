@@ -1,0 +1,66 @@
+segment_value,n,sum_pnl,mean_pnl_pct,win_rate_pct,segment_type
+cold,21,7.1,33.7,33.0,climate
+continental,102,7.9,7.8,25.0,climate
+mediterranean,42,9.4,22.4,31.0,climate
+subtropical,274,42.8,15.6,32.0,climate
+temperate,267,52.3,19.6,32.0,climate
+tropical,65,0.1,0.2,29.0,climate
+unknown,30,11.9,39.8,33.0,climate
+toronto,12,,85.6,42.0,city
+tel-aviv,24,,66.9,46.0,city
+dallas,15,,64.4,40.0,city
+moscow,13,,61.6,38.0,city
+madrid,23,,56.6,43.0,city
+lucknow,16,,50.7,44.0,city
+denver,10,,49.9,40.0,city
+buenos-aires,17,,48.4,35.0,city
+wellington,23,,47.9,39.0,city
+austin,11,,46.2,36.0,city
+los-angeles,18,,38.3,33.0,city
+munich,22,,36.3,32.0,city
+chongqing,19,,34.2,32.0,city
+milan,18,,31.2,33.0,city
+chengdu,14,,30.5,29.0,city
+miami,30,,29.6,40.0,city
+kuala-lumpur,12,,26.4,42.0,city
+wuhan,14,,17.3,29.0,city
+nyc,28,,16.6,29.0,city
+shenzhen,28,,16.5,29.0,city
+sao-paulo,22,,15.0,32.0,city
+paris,23,,14.6,35.0,city
+houston,13,,14.1,38.0,city
+atlanta,32,,12.4,34.0,city
+san-francisco,24,,10.5,29.0,city
+istanbul,20,,10.3,30.0,city
+tokyo,28,,9.1,29.0,city
+amsterdam,11,,8.5,27.0,city
+london,29,,7.9,31.0,city
+seattle,23,,6.2,30.0,city
+hong-kong,21,,-10.2,29.0,city
+warsaw,18,,-11.5,22.0,city
+ankara,23,,-13.6,26.0,city
+seoul,22,,-18.0,18.0,city
+shanghai,31,,-25.8,19.0,city
+singapore,23,,-33.2,22.0,city
+taipei,15,,-75.8,7.0,city
+beijing,22,,-79.9,5.0,city
+Friday,94,,17.0,,dow
+Monday,168,,7.8,,dow
+Saturday,116,,2.8,,dow
+Sunday,124,,26.4,,dow
+Thursday,114,,13.9,,dow
+Tuesday,104,,17.6,,dow
+Wednesday,81,,39.7,,dow
+"(0.199, 0.22]",186,,-8.5,19.0,price
+"(0.22, 0.24]",158,,10.7,26.0,price
+"(0.24, 0.26]",133,,27.3,32.0,price
+"(0.26, 0.28]",88,,17.3,32.0,price
+"(0.28, 0.3]",97,,24.2,36.0,price
+"(0.3, 0.32]",57,,36.4,42.0,price
+"(0.32, 0.34]",29,,46.8,48.0,price
+"(0.34, 0.36]",22,,68.8,59.0,price
+"(0.36, 0.38]",21,,28.3,48.0,price
+"(0.38, 0.4]",9,,-15.9,33.0,price
+5k-20k,418,,-3.6,,volume
+20k-100k,377,,37.2,,volume
+>100k,6,,110.1,,volume
