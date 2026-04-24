@@ -22,7 +22,7 @@ MAX_DAYS_TO_CLOSE = 30
 # S sweet spot: full 1/4 Kelly ≈ 3%
 # A: 1/4 Kelly says 3.1% for high-price end, 1% for low-price end. Pick middle 2.5%
 # B: 1/4 Kelly ≈ 1%
-STAKE_PCT = {"S": 0.03, "A+": 0.025, "A": 0.02, "B": 0.01, "C": 0.005}
+STAKE_PCT = {"S+": 0.04, "S": 0.03, "A+": 0.025, "A": 0.02, "B": 0.01, "C": 0.005}
 
 
 def main():
@@ -32,9 +32,9 @@ def main():
     df = pd.read_csv(CANDIDATES)
     print(f"Raw candidates: {len(df)}")
 
-    # Accept tiers S, A+, A, B
-    df = df[df["tier"].isin(["S", "A+", "A", "B"])].copy()
-    print(f"Tier S/A+/A/B: {len(df)}")
+    # Accept tiers S+, S, A+, A, B
+    df = df[df["tier"].isin(["S+", "S", "A+", "A", "B"])].copy()
+    print(f"Tier S+/S/A+/A/B: {len(df)}")
     if df.empty:
         print("No candidates.")
         return
@@ -58,7 +58,7 @@ def main():
     df = df.drop_duplicates(subset=["slug"]).copy()
 
     # Rank: prefer higher volume × tier priority × not-too-soon
-    tier_prio = {"S": 5, "A+": 4, "A": 3, "B": 2, "C": 1}
+    tier_prio = {"S+": 6, "S": 5, "A+": 4, "A": 3, "B": 2, "C": 1}
     df["tier_prio"] = df["tier"].map(tier_prio).fillna(0)
     df["hours_to_close"] = (df["end_dt"] - now).dt.total_seconds() / 3600
     # Rank: high-volume + higher-tier + at least 6h away (avoid near-expiry slippage)

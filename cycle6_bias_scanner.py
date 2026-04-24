@@ -37,11 +37,11 @@ HEADERS = {
 # Tier C = deep-dive confirmed but small sample
 BIAS_POCKETS = [
     # (category_key, price_lo, price_hi, best_side, expected_ev_pct, tier, source_n)
-    # Cycle 12 refined: vol 20-100k is where edge concentrates
-    # Best sub-cell: vol 50-100k x price 0.25-0.30 = +93% (n=24)
-    # Second: vol 20-50k x price 0.25-0.36 = +65%
-    #
-    # Tier S (new sweet spot from C12: price 0.25-0.36 combined)
+    # Cycle 21 stacked-filter strongest: price 0.25-0.36 + vol>=20k + preferred cities
+    # → +122% mean PnL, 63% win, t=+5.31 (n=57). Marked as Tier "S+".
+    # The S+ filter check is done in match_market via PER_POCKET_RULES.preferred.
+    ("weather_exact",   0.25, 0.36, "YES", 90.0, "S+", 57),
+    # Tier S wider (keep for good cities that aren't in top-16)
     ("weather_exact",   0.25, 0.36, "YES", 55.0, "S",  221),
     # Tier A+ (wider price band, still positive when vol>=20k)
     ("weather_exact",   0.22, 0.25, "YES", 25.0, "A+", 170),
@@ -131,8 +131,16 @@ def extract_city(slug: str) -> str:
     return m.group(1).rstrip("-")
 
 
-# Cycle 10: per-pocket banlist (derived from cycle10_per_pocket_banlist.py)
+# Cycle 10: per-pocket banlist + Cycle 21 preferred list
 PER_POCKET_RULES = {
+    # S+ = strictest filter = ONLY cities from C21 +122% mean PnL sample
+    "S+": {
+        "banned": [],
+        "preferred": ["dallas","austin","moscow","madrid","wellington","miami","tel-aviv",
+                      "milan","los-angeles","lucknow","san-francisco","denver","wuhan",
+                      "toronto","nyc","chongqing"],
+        "require_preferred": True,  # S+ ONLY accepts preferred cities
+    },
     "S":  {"banned": [], "preferred": ["london"]},
     "A+": {
         "banned": ["atlanta","ankara","london","amsterdam","hong-kong","warsaw","beijing",
@@ -182,11 +190,17 @@ def match_market(m: dict) -> list[dict]:
         if not (lo <= mid < hi):
             continue
 
-        # Per-pocket banlist (Cycle 10)
+        # Per-pocket banlist (Cycle 10) + S+ preferred-only (Cycle 21)
         rules = PER_POCKET_RULES.get(tier, {})
         if city and city in rules.get("banned", []):
             continue
         is_preferred = bool(city and city in rules.get("preferred", []))
+        # S+ tier requires city in preferred list
+        if rules.get("require_preferred") and not is_preferred:
+            continue
+        # S+ tier also requires volume >=20k
+        if tier == "S+" and float(m.get("volumeNum") or 0) < 20_000:
+            continue
 
         # You want to bet best_side. Entry is ask of that side
         if best_side == "YES":
